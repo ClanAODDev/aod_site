@@ -121,7 +121,7 @@ Vagrant.configure("2") do |config|
   config.ssh.forward_agent = true
 
   # Use NFS for the shared folder
-  config.vm.synced_folder ".", "/vagrant",
+  config.vm.synced_folder ".", "/var/www/html/aod",
     id: "core",
     :nfs => true,
     :mount_options => ['nolock,vers=3,udp,noatime,actimeo=2,fsc']
