@@ -15,8 +15,10 @@
     </video>
 
     <div class="hero-text">
-        <h2>Looking for a gaming community?</h2>
-        <p>Welcome home.</p>
+        <img src="./public/images/official-logo.png" class="aod-logo" />
+
+        <h1>Looking for a gaming community?</h1>
+        <h2 class="subtitle">Welcome home.</h2>
     </div>
 
 </div>
