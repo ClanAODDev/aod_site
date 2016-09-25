@@ -1,4 +1,9 @@
-/** Elements **/
+/**
+ * --------------------------
+ * ELEMENTS
+ * --------------------------
+ */
+
 h1, h2, h3, h4 {
     font-family: MuseoSans, Arial, sans-serif;
     color: #fff;
@@ -11,10 +16,43 @@ h2.subtitle {
     text-transform: none;
 }
 
+section {
+    width: 960px;
+    margin: 0 auto;
+    display: block;
+}
 
-/** Structure **/
+p {
+    color: #bfb5b5;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+}
+
+a {
+    color: #df4545;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/**
+ * --------------------------
+ * structure
+ * --------------------------
+ */
+body {
+    background-color: #090a10;
+}
+
+
+
 .aod-logo {
-    width: 300px;
+    filter: drop-shadow(0px 0px 5px #222);
+    -webkit-filter: drop-shadow(0px 0px 5px #222);
+    width: 200px;
 }
 
 .hero-video .hero-text {
@@ -24,29 +62,48 @@ h2.subtitle {
     position: relative;
     margin: 0 auto;
     text-align: center;
-    text-shadow: 0 0 5px rgba(1,1,1,0.5);
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    text-shadow: 0 0 2px rgba(0,0,0,.4);
 }
 
 .grid {
     position: absolute;
     top: 0;
     left: 0;
+    height: 550px;
     width: 100%;
-    height: 100%;
     z-index: 2;
-    background: rgba(0, 0, 0, .3) url(https://static.wixstatic.com/media/0da768_4371c7e64a49489bb88c536f515f2040.png);
+    background: rgba(0, 0, 0, .5) url(https://static.wixstatic.com/media/0da768_4371c7e64a49489bb88c536f515f2040.png);
+}
+
+.hero-video {
+    background: url(../../_images/company/careers/home-video-thumb.jpg) no-repeat center top;
+    height: 550px;
+
+}
+
+.video-container {
+    position: absolute;
+    height: 550px;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
 }
 
 video, .ie8-poster {
-    position: fixed;
+    object-fit: cover;
+    height: 550px;
+    top: 0;
     left: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    object-fit: fill;
-    z-index: 1;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
 }
 
 
