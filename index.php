@@ -36,26 +36,29 @@
 </div>
 
 <section class="supported-games">
-    <h1>18 Supported Games and Over 3000 Active Members</h1>
-    <p>There's no shortage of excitement when you have fun, engaging, and friendly members to join in on the action with you. Work as a team to defeat the enemy, and make great friends all at the same time.</p>
+    <div class="content-container centered">
+        <h1><strong>18</strong> Supported Games<br />and Over <strong>3000</strong> Active Members</h1>
+        <p>There's no shortage of excitement when you have fun, engaging, and friendly members to join in on the action
+            with you. Work as a team to defeat the enemy, and make great friends all at the same time.</p>
 
-    <div class="games-listing">
-        <ul>
-            <li>AODR</li>
-            <li>ARK</li>
-            <li>Armored Warfare</li>
-            <li>Battlefield</li>
-            <li>Battlefront</li>
-            <li>Black Desert</li>
-            <li>Jedi Knight/li>
-            <li>Overwatch</li>
-            <li>Planetside 2</li>
-            <li>Skyforge</li>
-            <li>Tom Clancy</li>
-            <li>Warframe</li>
-            <li>War Thunder</li>
-            <li>World of Warcraft</li>
-        </ul>
+        <div class="games-listing">
+            <ul>
+                <li>AODR</li>
+                <li>ARK</li>
+                <li>Armored Warfare</li>
+                <li>Battlefield</li>
+                <li>Battlefront</li>
+                <li>Black Desert</li>
+                <li>Jedi Knight/li>
+                <li>Overwatch</li>
+                <li>Planetside 2</li>
+                <li>Skyforge</li>
+                <li>Tom Clancy</li>
+                <li>Warframe</li>
+                <li>War Thunder</li>
+                <li>World of Warcraft</li>
+            </ul>
+        </div>
     </div>
 
 </section>

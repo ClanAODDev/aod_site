@@ -1,5 +1,17 @@
+html
+  min-width 960px
+
+body
+  background-color body_background_color
+  margin 0
+  padding 0
+  height 100%
+
 ul, ol
   list-style none
+
+strong
+  color link_color
 
 h1, h2, h3, h4
   font-family MuseoSans, "century gothic", arial, sans-serif
@@ -7,20 +19,33 @@ h1, h2, h3, h4
   line-height 1.2em
   text-transform uppercase
 
+h1
+  font-size 36px
+  font-weight 500
+
 h2
   &.subtitle
     font normal 24px / 1em MuseoSans, "century gothic", arial
     text-transform none
 
 section
+  padding-top 40px
   width 960px
   margin 0 auto
   display block
 
+  .content-container
+    width 700px
+    margin 0 auto
+
+    &.centered
+      text-align center
+
 p
   color body_color
   font-family arial, sans-serif
-  font-size 14px
+  font-size 16px
+  line-height 23px
 
 a
   color link_color
@@ -28,12 +53,6 @@ a
   &:hover
     color link_hover_color
     text-decoration underline
-
-body
-  background-color body_background_color
-  margin 0
-  padding 0
-  height 100%
 
 .primary-nav
   z-index 50
