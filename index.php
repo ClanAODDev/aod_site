@@ -9,7 +9,7 @@
     <div class="video-container">
         <div class="hero-text">
             <img src="./public/images/official-logo.png" class="aod-logo"/>
-            <h1>Looking for a gaming community?</h1>
+            <h1>Looking for a<br/>gaming community?</h1>
             <h2 class="subtitle">Welcome home.</h2>
         </div>
         <div class="grid"></div>
@@ -25,7 +25,7 @@
 <div class="primary-nav">
     <div class="nav-texture">
         <ul>
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="#">Home</a><img src="public/images/logo-mini.png" /></li>
             <li><a href="#">Forums</a></li>
             <li><a href="#">Divisions</a></li>
             <li><a href="#">History</a></li>
