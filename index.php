@@ -41,24 +41,23 @@
         <p>There's no shortage of excitement when you have fun, engaging, and friendly members to join in on the action
             with you. Work as a team to defeat the enemy, and make great friends all at the same time.</p>
 
-        <div class="games-listing">
-            <ul>
-                <li>AODR</li>
-                <li>ARK</li>
-                <li>Armored Warfare</li>
-                <li>Battlefield</li>
-                <li>Battlefront</li>
-                <li>Black Desert</li>
-                <li>Jedi Knight/li>
-                <li>Overwatch</li>
-                <li>Planetside 2</li>
-                <li>Skyforge</li>
-                <li>Tom Clancy</li>
-                <li>Warframe</li>
-                <li>War Thunder</li>
-                <li>World of Warcraft</li>
+            <ul class="games-listing">
+                <li class="game aodr">AOD Racing</li>
+                <li class="game ark">ARK</li>
+                <li class="game aw">Armored Warfare</li>
+                <li class="game bf">Battlefield</li>
+                <li class="game swb">Battlefront</li>
+                <li class="game bd">Black Desert</li>
+                <li class="game jk">Jedi Knight/li>
+                <li class="game ow">Overwatch</li>
+                <li class="game ps2">Planetside 2</li>
+                <li class="game sf">Skyforge</li>
+                <li class="game tc">Tom Clancy</li>
+                <li class="game wf">Warframe</li>
+                <li class="game wt">War Thunder</li>
+                <li class="game wow">World of Warcraft</li>
             </ul>
-        </div>
+
     </div>
 
 </section>

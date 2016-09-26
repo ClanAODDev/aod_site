@@ -1,13 +1,15 @@
 /** HERO AREA **/
 
+@import "partials/games"
+
 .aod-logo
   filter drop-shadow(0px 0px 5px #222)
   -webkit-filter drop-shadow(0px 0px 5px #222)
-  width 200px
+  width 250px
 
 .hero-video
-  background url(../../_images/company/careers/home-video-thumb.jpg) no-repeat center top
-  height 550px
+  height 600px
+
   .hero-text
     width 60%
     color #fff
@@ -16,16 +18,15 @@
     margin 0 auto
     text-align center
 
-.hero-text
-  h1
-    font-size 48px
-    text-shadow 0 0 2px rgba(0, 0, 0, .4)
+    h1
+      font-size 48px
+      text-shadow 0 0 2px rgba(0, 0, 0, .4)
 
 .grid
   position absolute
   top 0
   left 0
-  height 550px
+  height 600px
   width 100%
   z-index 2
   background rgba(0, 0, 0, .5) url(https://static.wixstatic.com/media/0da768_4371c7e64a49489bb88c536f515f2040.png)
@@ -50,6 +51,7 @@ video, .ie8-poster
   position absolute
   width 100%
   overflow hidden
+  padding-bottom 60px
 
 
 
@@ -57,4 +59,15 @@ video, .ie8-poster
 /** supported games **/
 
 .supported-games
-  width 960
+  background url('../images/supported-games-bg.jpg') no-repeat center 0
+  overflow visible
+  background-color #0b0e11
+
+  .content-container
+    padding 40px 0
+
+ul.games-listing li
+  text-align center
+  display inline-block
+  margin 15px
+  text-indent -9999
