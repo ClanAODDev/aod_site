@@ -1,6 +1,21 @@
-/** HERO AREA **/
+/**
+ * ----------------
+ * HERO AREA
+ * ----------------
+ **/
 
 @import "partials/games"
+
+/** media **/
+
+@media (max-width: 1020px)
+  .video-container .grid
+    display none
+
+  .hero-video video
+    display none
+
+
 
 .aod-logo
   filter drop-shadow(0px 0px 5px #222)
@@ -8,7 +23,7 @@
   width 250px
 
 .hero-video
-  height 600px
+  height 560px
 
   .hero-text
     width 60%
@@ -26,15 +41,17 @@
   position absolute
   top 0
   left 0
-  height 600px
+  height 560px
   width 100%
   z-index 2
   background rgba(0, 0, 0, .5) url(https://static.wixstatic.com/media/0da768_4371c7e64a49489bb88c536f515f2040.png)
 
 .video-container
+  background url('../images/video-poster.jpg') no-repeat
+  object-fit cover
   padding-top 60px
   position absolute
-  height 600px
+  height 570px
   width 100%
   min-width 960px
   overflow hidden
@@ -52,9 +69,6 @@ video, .ie8-poster
   width 100%
   overflow hidden
   padding-bottom 60px
-
-
-
 
 /** supported games **/
 
