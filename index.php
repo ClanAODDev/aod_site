@@ -1,5 +1,11 @@
 <html>
 <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <meta property="og:site_name" content="Angels of Death" />
+    <meta property="og:title" content="Angels of Death Gaming Clan" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="public/images/official-logo.png" />
+
     <title>ClanAOD.net</title>
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
@@ -77,10 +83,10 @@
         <p>We are constantly working to reach out to gamers like you all over the world! Connect with us on a variety of
             social media to see what we're up to!</p>
         <ul class="social-media-sites">
-            <li>Twitch</li>
-            <li>Twitter</li>
-            <li>Steam</li>
-            <li>Youtube</li>
+            <li class="twitch">Twitch</li>
+            <li class="twitter">Twitter</li>
+            <li class="steam">Steam</li>
+            <li class="youtube">Youtube</li>
         </ul>
     </div>
 </section>
