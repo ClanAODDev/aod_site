@@ -102,5 +102,27 @@
     </div>
 </section>
 
+<footer class="primary-footer">
+    <div class="announcements">
+        <li>
+            <a href="#">AODTV Kickstarter with Jedi Knight's Serious Sunday</a>
+            <span class="meta">AOD_Firestrike, 08/29/2016 12:13 PM</span>
+        </li>
+        <li>
+            <a href="#">Overwatch Goes Full Time & July Promotions</a>
+            <span class="meta">AOD_Drew, 08/29/2016 12:13 PM</span>
+        </li>
+        <li>
+            <a href="#">Rainbow Six Siege Free Weekend + Half Price</a>
+            <span class="meta">AOD_TheAlphaDogs, 08/29/2016 12:13 PM</span>
+        </li>
+        <li>
+            <a href="#">ARK: Survival Evolved FREE Weekend + Half Off!</a>
+            <span class="meta">AOD_Firestrike, 08/29/2016 12:13 PM</span>
+        </li>
+    </div>
+
+</footer>
+
 </body>
 </html>
