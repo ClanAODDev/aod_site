@@ -12,7 +12,7 @@
   width 250px
 
 .hero-video
-  height 550px
+  min-height 700px
 
   .hero-text
     width 60%
@@ -30,7 +30,7 @@
   position absolute
   top 0
   left 0
-  height 560px
+  min-height 700px
   width 100%
   z-index 2
   background rgba(0, 0, 0, .5) url(https://static.wixstatic.com/media/0da768_4371c7e64a49489bb88c536f515f2040.png)
@@ -40,7 +40,7 @@
   object-fit cover
   padding-top 60px
   position absolute
-  height 550px
+  height 700px
   width 100%
   min-width 960px
   overflow hidden
@@ -51,7 +51,7 @@
 
 video, .ie8-poster
   object-fit cover
-  height 550px
+  height 700px
   z-index 1
   top 0
   left 0
@@ -78,21 +78,29 @@ ul.games-listing li
 /** founded section **/
 
 section.founded-info
-  background founded_info_bg_color
+  background-image url(founded_bg_image), url(founded_bg_top_border_image)
+  background-color founded_info_bg_color
+  background-position center 0, center 0
+  background-repeat no-repeat, repeat-x
 
+
+/** social media **/
 section.social-media
-  background social_media_section_bg_color
+  background url(social_media_bg_image) social_media_section_bg_color no-repeat center 0
 
+/** honor section **/
 section.honor-info
   background honor_section_bg_color
 
 
-
+/** apply section **/
+section.apply-info
+  background url(apply_bg_image) apply_section_bg_color no-repeat center 0
 
 /** social media **/
 .social-media ul
   margin-top 60px
-  
+
 ul.social-media-sites li
   display inline-block
   background-image url('../images/social-media-sprite.png')

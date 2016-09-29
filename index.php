@@ -17,6 +17,9 @@
             <img src="./public/images/official-logo.png" class="aod-logo"/>
             <h1>Looking for a<br/>gaming community?</h1>
             <h2 class="subtitle">Welcome home.</h2>
+            <div style="height: 200px;">
+                PLAY BUTTON
+            </div>
         </div>
         <div class="grid"></div>
         <video id="video" poster="./public/images/video-poster.jpg" autoplay loop muted>
@@ -45,7 +48,7 @@
     <div class="content-container centered">
         <h1><strong>18</strong> Supported Games<br/>and Over <strong>3000</strong> Active Members</h1>
         <p>There's no shortage of excitement when you have fun, engaging, and friendly members to join in on the action
-            with you. Work as a team to defeat the enemy, and make great friends all at the same time.</p>
+            with you.<br />Work as a team to defeat the enemy, and make great friends all at the same time.</p>
 
         <ul class="games-listing">
             <li class="game aodr">AOD Racing</li>
@@ -80,7 +83,7 @@
 <section class="social-media">
     <div class="content-container centered">
         <h1>Catch up with us on social media</h1>
-        <p>We are constantly working to reach out to gamers like you all over the world! Connect with us on a variety of
+        <p>We are constantly working to reach out to gamers like you all over the world!<br />Connect with us on a variety of
             social media to see what we're up to!</p>
         <ul class="social-media-sites">
             <li class="twitch">Twitch</li>
