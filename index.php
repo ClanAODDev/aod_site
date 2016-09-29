@@ -98,7 +98,7 @@
     <div class="content-container centered">
         <h1>So what are you waiting for?</h1>
         <p>Complete a clan application with one of our divisions, and see if we're a good fit for each other.</p>
-        <p><a href="#" class="apply-button">Apply</a></p>
+        <p><a href="#" class="call-to-action-button">Apply</a></p>
     </div>
 </section>
 
