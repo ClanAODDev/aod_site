@@ -114,6 +114,14 @@
 
 <section class="primary-footer">
     <div class="content-container">
+        <div class="blurb">
+            <h1>About Clan AOD</h1>
+            <p>Elevatus de noster gallus, magicae cacula! All of those powerdrains will be lost in collision courses
+                like galaxies in pressures. Vortexs peregrinatione in grandis aboa!</p>
+            <p>Demolitione placidus era est. Germanus brabeutas ducunt ad victrix. Demissio brevis quadra est. Pol.</p>
+        </div>
+    </div>
+    <div class="content-container">
         <div class="announcements">
             <h1>Recent Announcements</h1>
             <ul>
