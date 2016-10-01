@@ -1,10 +1,10 @@
 <html>
 <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-    <meta property="og:site_name" content="Angels of Death" />
-    <meta property="og:title" content="Angels of Death Gaming Clan" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="public/images/official-logo.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <meta property="og:site_name" content="Angels of Death"/>
+    <meta property="og:title" content="Angels of Death Gaming Clan"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="public/images/official-logo.png"/>
 
     <title>ClanAOD.net</title>
     <link href="style.css" type="text/css" rel="stylesheet">
@@ -48,7 +48,7 @@
     <div class="content-container centered">
         <h1><strong>18</strong> Supported Games<br/>and Over <strong>3000</strong> Active Members</h1>
         <p>There's no shortage of excitement when you have fun, engaging, and friendly members to join in on the action
-            with you.<br />Work as a team to defeat the enemy, and make great friends all at the same time.</p>
+            with you.<br/>Work as a team to defeat the enemy, and make great friends all at the same time.</p>
 
         <ul class="games-listing">
             <li class="game aodr">AOD Racing</li>
@@ -83,7 +83,8 @@
 <section class="social-media">
     <div class="content-container centered">
         <h1>Catch up with us on social media</h1>
-        <p>We are constantly working to reach out to gamers like you all over the world!<br />Connect with us on a variety of
+        <p>We are constantly working to reach out to gamers like you all over the world!<br/>Connect with us on a
+            variety of
             social media to see what we're up to!</p>
         <ul class="social-media-sites">
             <li class="twitch">Twitch</li>
@@ -111,27 +112,54 @@
     </div>
 </section>
 
-<footer class="primary-footer">
-    <div class="announcements">
-        <li>
-            <a href="#">AODTV Kickstarter with Jedi Knight's Serious Sunday</a>
-            <span class="meta">AOD_Firestrike, 08/29/2016 12:13 PM</span>
-        </li>
-        <li>
-            <a href="#">Overwatch Goes Full Time & July Promotions</a>
-            <span class="meta">AOD_Drew, 08/29/2016 12:13 PM</span>
-        </li>
-        <li>
-            <a href="#">Rainbow Six Siege Free Weekend + Half Price</a>
-            <span class="meta">AOD_TheAlphaDogs, 08/29/2016 12:13 PM</span>
-        </li>
-        <li>
-            <a href="#">ARK: Survival Evolved FREE Weekend + Half Off!</a>
-            <span class="meta">AOD_Firestrike, 08/29/2016 12:13 PM</span>
-        </li>
-    </div>
+<section class="primary-footer">
+    <div class="content-container">
+        <div class="announcements">
+            <h1>Recent Announcements</h1>
+            <ul>
+                <li>
+                    <a href="#">AODTV Kickstarter with Jedi Knight's Serious Sunday</a>
+                    <span class="meta">AOD_Firestrike, 08/29/2016 12:13 PM</span>
+                </li>
+                <li>
+                    <a href="#">Overwatch Goes Full Time & July Promotions</a>
+                    <span class="meta">AOD_Drew, 08/29/2016 12:13 PM</span>
+                </li>
+                <li>
+                    <a href="#">Rainbow Six Siege Free Weekend + Half Price</a>
+                    <span class="meta">AOD_TheAlphaDogs, 08/29/2016 12:13 PM</span>
+                </li>
+                <li>
+                    <a href="#">ARK: Survival Evolved FREE Weekend + Half Off!</a>
+                    <span class="meta">AOD_Firestrike, 08/29/2016 12:13 PM</span>
+                </li>
+            </ul>
+        </div>
 
-</footer>
+        <div class="twitter-feed">
+            <h1>Twitter Activity</h1>
+            <ul>
+                <li>
+                    <a href="#">AODTV Kickstarter with Jedi Knight's Serious Sunday</a>
+                    <span class="meta">AOD_Firestrike, 08/29/2016 12:13 PM</span>
+                </li>
+                <li>
+                    <a href="#">Overwatch Goes Full Time & July Promotions</a>
+                    <span class="meta">AOD_Drew, 08/29/2016 12:13 PM</span>
+                </li>
+                <li>
+                    <a href="#">Rainbow Six Siege Free Weekend + Half Price</a>
+                    <span class="meta">AOD_TheAlphaDogs, 08/29/2016 12:13 PM</span>
+                </li>
+                <li>
+                    <a href="#">ARK: Survival Evolved FREE Weekend + Half Off!</a>
+                    <span class="meta">AOD_Firestrike, 08/29/2016 12:13 PM</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</section>
 
 </body>
 </html>
