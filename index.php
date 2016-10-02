@@ -121,8 +121,9 @@
             <p>Demolitione placidus era est. Germanus brabeutas ducunt ad victrix. Demissio brevis quadra est. Pol.</p>
         </div>
     </div>
+
     <div class="content-container">
-        <div class="announcements">
+        <div class="announcements footer-section">
             <h1>Recent Announcements</h1>
             <ul>
                 <li>
@@ -143,8 +144,7 @@
                 </li>
             </ul>
         </div>
-
-        <div class="twitter-feed">
+        <div class="twitter-feed footer-section">
             <h1>Twitter Activity</h1>
             <ul>
                 <li>
@@ -163,6 +163,17 @@
                     <a href="#">ARK: Survival Evolved FREE Weekend + Half Off!</a>
                     <span class="meta">AOD_Firestrike, 08/29/2016 12:13 PM</span>
                 </li>
+            </ul>
+        </div>
+        <div class="sitemap footer-section">
+            <h1>Site Map</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Forums</a></li>
+                <li><a href="#">Something Else</a></li>
+                <li><a href="#">Another Something</a></li>
+                <li><a href="#">This and That</a></li>
+                <li><span>Stay Connected</span> <a href="#"><i class="twitter"></i><i class="twitter"></i><i class="twitter"></i><i class="twitter"></i></li>
             </ul>
         </div>
     </div>

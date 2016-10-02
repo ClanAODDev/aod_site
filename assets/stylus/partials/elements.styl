@@ -132,7 +132,11 @@ a.call-to-action-button
         text-decoration none
 
 section.primary-footer
-
+  h1
+    font-family MuseoSans, "century gothic", arial, sans-serif
+    font-size 18px
+  p
+    font-size 14px
   .content-container
     display -webkit-flex
     display flex
@@ -142,30 +146,29 @@ section.primary-footer
 
     .blurb
       flex-wrap wrap
-      border-bottom: solid 1px rgba(255,255,255,.1)
+      padding 0 30px 20px 0
 
-.announcements, .twitter-feed
-  padding 30 30px 0 0
-  width 50%
-
-  h1
-    font-family MuseoSans, "century gothic", arial, sans-serif
-    font-size 18px
-
+.footer-section
+  width 33%
+  padding-top 20px
   ul
     margin 0
     padding 0
-
   ul li
     line-height 25px
     display block
     font-family Tahoma, sans-serif
     font-size 12px
     padding-bottom 15px
-
     .meta
       color rgba(255,255,255,.2)
       display block
-
   a
     font-weight lighter
+.sitemap ul li
+  padding 0
+  a
+    color #6c7384
+    &:hover
+      color #fff
+
