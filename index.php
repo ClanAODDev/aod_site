@@ -34,7 +34,7 @@
 <div class="primary-nav">
     <div class="nav-texture">
         <ul>
-            <li class="active"><a href="#">Home</a><img src="public/images/logo-mini.png"/></li>
+            <li class="active home"><a href="#">Home</a><img src="public/images/logo-mini.png"/></li>
             <li><a href="#">Forums</a></li>
             <li><a href="#">Divisions</a></li>
             <li><a href="#">History</a></li>
@@ -115,10 +115,16 @@
 <section class="primary-footer">
     <div class="content-container">
         <div class="blurb">
-            <h1>About Clan AOD</h1>
-            <p>Elevatus de noster gallus, magicae cacula! All of those powerdrains will be lost in collision courses
-                like galaxies in pressures. Vortexs peregrinatione in grandis aboa!</p>
-            <p>Demolitione placidus era est. Germanus brabeutas ducunt ad victrix. Demissio brevis quadra est. Pol.</p>
+            <div class="logo">
+                <img src="./public/images/official-logo.png" />
+            </div>
+            <div class="blurb-text">
+                <h1>About Clan AOD</h1>
+                <p>Elevatus de noster gallus, magicae cacula! All of those powerdrains will be lost in collision courses
+                    like galaxies in pressures. Vortexs peregrinatione in grandis aboa!</p>
+                <p>Demolitione placidus era est. Germanus brabeutas ducunt ad victrix. Demissio brevis quadra est.
+                    Pol.</p>
+            </div>
         </div>
     </div>
 
@@ -159,13 +165,23 @@
                     <li><a href="#">Something Else</a></li>
                     <li><a href="#">Another Something</a></li>
                 </ul>
-                <div class="social-media">
-                    Stay Connected <a href="#"><i class="twitter"></i></a>
-                </div>
             </div>
         </div>
+
+        <div class="footer-section twitter-feed">
+            <h1>Twitter Activity</h1>
+            <ul>
+                <li><a href="#">@officialclanaod</a> How swashbuckling. You taste like an anchor. <a href="#">about 20 minutes ago</a></li>
+                <li><a href="#">@officialclanaod</a> Try slicing tuna platter garnished with worcestershire sauce. Marinate a handfull teaspoons of white bread in nine tablespoons of coconut milk. <a href="#">about an hour ago</a></li>
+                <li><a href="#">@officialclanaod</a> Pins laugh from greeds like golden cockroachs. Ahoy, halitosis! The shark sings amnesty like a rainy mainland. <a href="#">about 3 hours ago</a></li>
+            </ul>
+        </div>
+
+        <div class="site-meta"></div>
     </div>
 </section>
 
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="./public/js/main.js"></script>
 </body>
 </html>
