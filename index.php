@@ -48,7 +48,7 @@
     <div class="content-container centered">
         <h1><strong>18</strong> Supported Games<br/>and Over <strong>3000</strong> Active Members</h1>
         <p>There's no shortage of excitement when you have fun, engaging, and friendly members to join in on the action
-            with you.<br/>Work as a team to defeat the enemy, and make great friends all at the same time.</p>
+            with you. Work as a team to defeat the enemy, and make great friends all at the same time.</p>
 
         <ul class="games-listing">
             <li class="game aodr">AOD Racing</li>
@@ -83,9 +83,7 @@
 <section class="social-media">
     <div class="content-container centered">
         <h1>Catch up with us on social media</h1>
-        <p>We are constantly working to reach out to gamers like you all over the world!<br/>Connect with us on a
-            variety of
-            social media to see what we're up to!</p>
+        <p>We are constantly working to reach out to gamers like you all over the world! Connect with us on a variety of social media to see what we're up to!</p>
         <ul class="social-media-sites">
             <li class="twitch">Twitch</li>
             <li class="twitter">Twitter</li>
@@ -98,8 +96,7 @@
 <section class="honor-info">
     <div class="content-container">
         <h1>The Angels of Death is<br/>an honor clan</h1>
-        <p>Chief among our concerns is fair play, respect among members, and courtesy to our volunteer staff leadership.
-            These core values contribute to an atmosphere that anyone can enjoy.</p>
+        <p>Chief among our concerns is fair play, respect among members, and courtesy to our volunteer staff leadership. These core values contribute to an atmosphere that anyone can enjoy.</p>
         <p><a href="#">Read our Code of Conduct</a></p>
     </div>
 </section>
@@ -119,7 +116,7 @@
                 <img src="./public/images/official-logo.png" />
             </div>
             <div class="blurb-text">
-                <h1>About Clan AOD</h1>
+                <h1>About The Angels of Death</h1>
                 <p>Elevatus de noster gallus, magicae cacula! All of those powerdrains will be lost in collision courses
                     like galaxies in pressures. Vortexs peregrinatione in grandis aboa!</p>
                 <p>Demolitione placidus era est. Germanus brabeutas ducunt ad victrix. Demissio brevis quadra est.
@@ -164,6 +161,15 @@
                     <li><a href="#">Forums</a></li>
                     <li><a href="#">Something Else</a></li>
                     <li><a href="#">Another Something</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <ul class="sites">
+                    <li>Stay Connected</li>
+                    <li><a href="#"><i class="twitter">T</i></a></li>
+                    <li><a href="#"><i class="youtube">Y</i></a></li>
+                    <li><a href="#"><i class="twitch">T</i></a></li>
+                    <li><a href="#"><i class="steam">S</i></a></li>
                 </ul>
             </div>
         </div>
