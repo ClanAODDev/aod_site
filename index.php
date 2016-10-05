@@ -1,29 +1,4 @@
-<html>
-<head>
-
-    <!-— facebook open graph tags -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://clanaod.net" />
-    <meta property="og:title" content="Angels of Death" />
-    <meta property="og:description" content="A gaming community with support for over 16 different PC gaming titles and over 3000 members." />
-    <meta property="og:image" content="http://wordpress.clanaod.net/markup/public/images/official-logo.png" />
-
-    <!-— twitter card tags additive with the og: tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:domain" value="clanaod.net" />
-    <meta name="twitter:title" value="Angels of Death" />
-    <meta name="twitter:description" value="A gaming community with support for over 16 different PC gaming titles and over 3000 members." />
-    <meta name="twitter:image" content="http://wordpress.clanaod.net/markup/public/images/official-logo.png" />
-    <meta name="twitter:url" value="http://clanaod.net" />
-    <meta name="twitter:label1" value="Visit us on Twitter" />
-    <meta name="twitter:data1" value="@officialclanaod" />
-    <meta name="twitter:label2" value="Or on Youtube" />
-    <meta name="twitter:data2" value="at http://bit.ly/2dKbL9I" />
-
-    <title>ClanAOD.net</title>
-    <link href="style.css" type="text/css" rel="stylesheet">
-</head>
-<body>
+<?php require('header.php'); ?>
 
 <div class="hero-video">
     <div class="video-container">
@@ -40,21 +15,9 @@
                 type="video/mp4">
         </video>
     </div>
-
 </div>
 
-<div class="primary-nav">
-    <div class="nav-texture">
-        <ul>
-            <li class="active home"><a href="#">Home</a><img src="public/images/logo-mini.png"/></li>
-            <li><a href="#">Forums</a></li>
-            <li><a href="#">Divisions</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Apply</a></li>
-        </ul>
-    </div>
-</div>
+<?php require('./assets/partials/navbar.php'); ?>
 
 <section class="supported-games">
     <div class="content-container centered">
@@ -123,99 +86,7 @@
     </div>
 </section>
 
-<section class="primary-footer">
-    <div class="content-container">
-        <div class="blurb">
-            <div class="logo">
-                <img src="./public/images/official-logo.png"/>
-            </div>
-            <div class="blurb-text">
-                <h1>About The Angels of Death</h1>
-                <p>Elevatus de noster gallus, magicae cacula! All of those powerdrains will be lost in collision courses
-                    like galaxies in pressures. Vortexs peregrinatione in grandis aboa!</p>
-                <p>Demolitione placidus era est. Germanus brabeutas ducunt ad victrix. Demissio brevis quadra est.
-                    Pol.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="content-container">
-        <div class="announcements footer-section">
-            <h1>Recent Announcements</h1>
-            <ul>
-                <li>
-                    <a href="#">AODTV Kickstarter with Jedi Knight's Serious Sunday</a>
-                    <span class="meta">AOD_Firestrike, 08/29/2016 12:13 PM</span>
-                </li>
-                <li>
-                    <a href="#">Overwatch Goes Full Time & July Promotions</a>
-                    <span class="meta">AOD_Drew, 08/29/2016 12:13 PM</span>
-                </li>
-                <li>
-                    <a href="#">Rainbow Six Siege Free Weekend + Half Price</a>
-                    <span class="meta">AOD_TheAlphaDogs, 08/29/2016 12:13 PM</span>
-                </li>
-                <li>
-                    <a href="#">ARK: Survival Evolved FREE Weekend + Half Off!</a>
-                    <span class="meta">AOD_Firestrike, 08/29/2016 12:13 PM</span>
-                </li>
-            </ul>
-        </div>
-
-        <div class="sitemap footer-section">
-            <h1>Site Map</h1>
-            <div class="links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Forums</a></li>
-                    <li><a href="#">Something Else</a></li>
-                    <li><a href="#">Another Something</a></li>
-                    <li><a href="#">This and That</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Forums</a></li>
-                    <li><a href="#">Something Else</a></li>
-                    <li><a href="#">Another Something</a></li>
-                </ul>
-            </div>
-            <div class="social-media">
-                <ul class="sites">
-                    <li>Stay Connected</li>
-                    <li><a href="#"><i class="twitter">T</i></a></li>
-                    <li><a href="#"><i class="youtube">Y</i></a></li>
-                    <li><a href="#"><i class="twitch">T</i></a></li>
-                    <li><a href="#"><i class="steam">S</i></a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-section full-width twitter-feed">
-            <h1>Twitter Activity</h1>
-            <ul>
-                <li><a href="#">@officialclanaod</a> How swashbuckling. You taste like an anchor. <a href="#">about 20
-                        minutes ago</a></li>
-                <li><a href="#">@officialclanaod</a> Try slicing tuna platter garnished with worcestershire sauce.
-                    Marinate a handfull teaspoons of white bread in nine tablespoons of coconut milk. <a href="#">about
-                        an hour ago</a></li>
-                <li><a href="#">@officialclanaod</a> Pins laugh from greeds like golden cockroachs. Ahoy, halitosis! The
-                    shark sings amnesty like a rainy mainland. <a href="#">about 3 hours ago</a></li>
-            </ul>
-        </div>
-
-        <!--
-        <div class="site-meta footer-section full-width centered">
-            <ul>
-                <li>Copyright &copy; 2001-2016 Angels of Death. All rights reserved.</li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Sitemap</a></li>
-            </ul>
-        </div>
-        -->
-
-    </div>
-</section>
-
-<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="./public/js/main.js"></script>
+<?php require('./assets/partials/footer.php'); ?>
 
 </body>
 </html>
