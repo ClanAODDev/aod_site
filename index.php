@@ -15,11 +15,9 @@
     <div class="video-container">
         <div class="hero-text">
             <img src="./public/images/official-logo.png" class="aod-logo"/>
-            <h1>Looking for a<br/>gaming community?</h1>
-            <h2 class="subtitle">Welcome home.</h2>
-            <div style="height: 200px;">
-                PLAY BUTTON
-            </div>
+            <h1>Some things are<br/>meant to be</h1>
+            <h2 class="subtitle">What are you waiting for?</h2>
+            <div class="play-button">PLAY VIDEO</div>
         </div>
         <div class="grid"></div>
         <video id="video" poster="./public/images/video-poster.jpg" autoplay loop muted>
