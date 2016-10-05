@@ -1,10 +1,24 @@
 <html>
 <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
-    <meta property="og:site_name" content="Angels of Death"/>
-    <meta property="og:title" content="Angels of Death Gaming Clan"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:image" content="public/images/official-logo.png"/>
+
+    <!-— facebook open graph tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://clanaod.net" />
+    <meta property="og:title" content="Angels of Death" />
+    <meta property="og:description" content="A gaming community with support for over 16 different PC gaming titles and over 3000 members." />
+    <meta property="og:image" content="http://wordpress.clanaod.net/markup/public/images/official-logo.png" />
+
+    <!-— twitter card tags additive with the og: tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:domain" value="clanaod.net" />
+    <meta name="twitter:title" value="Angels of Death" />
+    <meta name="twitter:description" value="A gaming community with support for over 16 different PC gaming titles and over 3000 members." />
+    <meta name="twitter:image" content="http://wordpress.clanaod.net/markup/public/images/official-logo.png" />
+    <meta name="twitter:url" value="http://clanaod.net" />
+    <meta name="twitter:label1" value="Visit us on Twitter" />
+    <meta name="twitter:data1" value="@officialclanaod" />
+    <meta name="twitter:label2" value="Or on Youtube" />
+    <meta name="twitter:data2" value="at http://bit.ly/2dKbL9I" />
 
     <title>ClanAOD.net</title>
     <link href="style.css" type="text/css" rel="stylesheet">
@@ -81,7 +95,8 @@
 <section class="social-media">
     <div class="content-container centered">
         <h1>Catch up with us on social media</h1>
-        <p>We are constantly working to reach out to gamers like you all over the world! Connect with us on a variety of social media to see what we're up to!</p>
+        <p>We are constantly working to reach out to gamers like you all over the world! Connect with us on a variety of
+            social media to see what we're up to!</p>
         <ul class="social-media-sites">
             <li class="twitch">Twitch</li>
             <li class="twitter">Twitter</li>
@@ -94,7 +109,8 @@
 <section class="honor-info">
     <div class="content-container">
         <h1>The Angels of Death is<br/>an honor clan</h1>
-        <p>Chief among our concerns is fair play, respect among members, and courtesy to our volunteer staff leadership. These core values contribute to an atmosphere that anyone can enjoy.</p>
+        <p>Chief among our concerns is fair play, respect among members, and courtesy to our volunteer staff leadership.
+            These core values contribute to an atmosphere that anyone can enjoy.</p>
         <p><a href="#">Read our Code of Conduct</a></p>
     </div>
 </section>
@@ -111,7 +127,7 @@
     <div class="content-container">
         <div class="blurb">
             <div class="logo">
-                <img src="./public/images/official-logo.png" />
+                <img src="./public/images/official-logo.png"/>
             </div>
             <div class="blurb-text">
                 <h1>About The Angels of Death</h1>
@@ -172,20 +188,34 @@
             </div>
         </div>
 
-        <div class="footer-section twitter-feed">
+        <div class="footer-section full-width twitter-feed">
             <h1>Twitter Activity</h1>
             <ul>
-                <li><a href="#">@officialclanaod</a> How swashbuckling. You taste like an anchor. <a href="#">about 20 minutes ago</a></li>
-                <li><a href="#">@officialclanaod</a> Try slicing tuna platter garnished with worcestershire sauce. Marinate a handfull teaspoons of white bread in nine tablespoons of coconut milk. <a href="#">about an hour ago</a></li>
-                <li><a href="#">@officialclanaod</a> Pins laugh from greeds like golden cockroachs. Ahoy, halitosis! The shark sings amnesty like a rainy mainland. <a href="#">about 3 hours ago</a></li>
+                <li><a href="#">@officialclanaod</a> How swashbuckling. You taste like an anchor. <a href="#">about 20
+                        minutes ago</a></li>
+                <li><a href="#">@officialclanaod</a> Try slicing tuna platter garnished with worcestershire sauce.
+                    Marinate a handfull teaspoons of white bread in nine tablespoons of coconut milk. <a href="#">about
+                        an hour ago</a></li>
+                <li><a href="#">@officialclanaod</a> Pins laugh from greeds like golden cockroachs. Ahoy, halitosis! The
+                    shark sings amnesty like a rainy mainland. <a href="#">about 3 hours ago</a></li>
             </ul>
         </div>
 
-        <div class="site-meta"></div>
+        <!--
+        <div class="site-meta footer-section full-width centered">
+            <ul>
+                <li>Copyright &copy; 2001-2016 Angels of Death. All rights reserved.</li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+        -->
+
     </div>
 </section>
 
 <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="./public/js/main.js"></script>
+
 </body>
 </html>
