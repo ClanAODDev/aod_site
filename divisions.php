@@ -6,6 +6,7 @@ require('./assets/partials/navbar.php');
 $divisions = [
     ['name' => 'Battlefield', 'members' => 409, 'abbreviation' => 'bf'],
     ['name' => 'Battlefront', 'members' => 198, 'abbreviation' => 'swb'],
+    ['name' => 'Black Desert Online', 'members' => 198, 'abbreviation' => 'bdo'],
     ['name' => 'Planetside 2', 'members' => 512, 'abbreviation' => 'ps2'],
     ['name' => 'Warframe', 'members' => 274, 'abbreviation' => 'wf'],
     ['name' => 'Tom Clancy', 'members' => 167, 'abbreviation' => 'tc'],
@@ -28,9 +29,14 @@ $divisions = [
         <div class="divisions-list">
             <div class="collection">
                 <?php foreach ($divisions as $division): ?>
-                    <div class="item game-button <?= $division['abbreviation'] ?>">
-                        <div class="title"><?= $division['name'] ?></div>
-                        <div class="members"><?= $division['members'] ?> members</div>
+                    <div class="item game-button">
+                        <div class="icon">
+                            <div class="game <?= $division['abbreviation'] ?>"></div>
+                        </div>
+                        <div class="meta">
+                            <div class="title"><?= $division['name'] ?></div>
+                            <div class="members"><?= $division['members'] ?> members</div>
+                        </div>
                     </div>
                 <?php endforeach; ?>
             </div>
