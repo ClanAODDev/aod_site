@@ -5,9 +5,7 @@ require('./assets/partials/navbar.php');
 
 ?>
 
-    <div class="division-hero-image"></div>
-
-    <section class="division">
+    <section class="division bf">
         <div class="content-container">
 
             <div class="sub-nav">
