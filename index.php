@@ -86,7 +86,7 @@
     </div>
 </section>
 
-<?php require('./assets/partials/footer.php'); ?>
+<?php require('footer.php'); ?>
 
 </body>
 </html>
