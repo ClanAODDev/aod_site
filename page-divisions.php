@@ -1,9 +1,8 @@
 <?php
 
 require('header.php');
-
 require('./assets/partials/navbar.php');
-require ('./data/divisionCollection.php')
+require('./data/divisions.php')
 
 ?>
 
