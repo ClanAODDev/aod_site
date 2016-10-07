@@ -1,13 +1,25 @@
+'use strict';
+
 var ClanAOD = ClanAOD || {};
 
 (function ($) {
     ClanAOD = {
-        setup: function () {
 
-            /**
-             * need to define scroll-location based on URI
-             * if not on the home-page, navbar will be at the top
-             */
+        setup: function setup() {
+            this.smoothScroll();
+            this.stickyNav();
+        },
+
+        smoothScroll: function smoothScroll() {
+            $('.smooth-scroll').click(function (e) {
+                e.preventDefault();
+                var targetId = $(this).attr("href");
+                var top = $(targetId).offset().top;
+                $('html, body').stop().animate({ scrollTop: top }, 1500);
+            });
+        },
+
+        stickyNav: function stickyNav() {
             var scrollLocation = 700; //px
 
             $(window).bind('scroll', function () {
@@ -18,7 +30,7 @@ var ClanAOD = ClanAOD || {};
                 }
             });
         }
-    }
+    };
 })(jQuery);
 
 ClanAOD.setup();

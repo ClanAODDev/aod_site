@@ -1,13 +1,30 @@
 <?php
 
-$divisions = [
+/**
+ * Makeshift collection of division data
+ */
+
+return [
     [
         'name' => 'Battlefield',
         'members' => 409,
         'abbreviation' => 'bf',
         'leaders' => [
-            'Commanding Officer' => 'MSgt Deity',
-            'Executive Officer' => 'SSgt Guybrush',
+            [
+                'name' => 'Deity',
+                'position' => 'Commanding Officer',
+                'rank' => 'MSgt',
+            ],
+            [
+                'name' => 'Guybrush',
+                'position' => 'Executive Officer',
+                'rank' => 'SSgt',
+            ],
+            [
+                'name' => 'Redguard',
+                'position' => 'Executive Officer',
+                'rank' => 'Sgt',
+            ],
         ]
     ],
     [
@@ -15,8 +32,11 @@ $divisions = [
         'members' => 198,
         'abbreviation' => 'swb',
         'leaders' => [
-            'Commanding Officer' => '',
-            'Executive Officer' => '',
+            [
+                'name' => '',
+                'position' => '',
+                'rank' => '',
+            ],
         ]
     ],
     [
@@ -24,8 +44,11 @@ $divisions = [
         'members' => 198,
         'abbreviation' => 'bdo',
         'leaders' => [
-            'Commanding Officer' => '',
-            'Executive Officer' => '',
+            [
+                'name' => '',
+                'position' => '',
+                'rank' => '',
+            ],
         ]
     ],
     [
@@ -33,8 +56,11 @@ $divisions = [
         'members' => 512,
         'abbreviation' => 'ps2',
         'leaders' => [
-            'Commanding Officer' => '',
-            'Executive Officer' => '',
+            [
+                'name' => '',
+                'position' => '',
+                'rank' => '',
+            ],
         ]
     ],
     [
@@ -42,8 +68,11 @@ $divisions = [
         'members' => 274,
         'abbreviation' => 'wf',
         'leaders' => [
-            'Commanding Officer' => '',
-            'Executive Officer' => '',
+            [
+                'name' => '',
+                'position' => '',
+                'rank' => '',
+            ],
         ]
     ],
     [
@@ -51,8 +80,11 @@ $divisions = [
         'members' => 167,
         'abbreviation' => 'tc',
         'leaders' => [
-            'Commanding Officer' => '',
-            'Executive Officer' => '',
+            [
+                'name' => '',
+                'position' => '',
+                'rank' => '',
+            ],
         ]
     ],
     [
@@ -60,8 +92,11 @@ $divisions = [
         'members' => 167,
         'abbreviation' => 'jk',
         'leaders' => [
-            'Commanding Officer' => '',
-            'Executive Officer' => '',
+            [
+                'name' => '',
+                'position' => '',
+                'rank' => '',
+            ],
         ]
     ],
     [
@@ -69,8 +104,11 @@ $divisions = [
         'members' => 238,
         'abbreviation' => 'ow',
         'leaders' => [
-            'Commanding Officer' => '',
-            'Executive Officer' => '',
+            [
+                'name' => '',
+                'position' => '',
+                'rank' => '',
+            ],
         ]
     ],
     [
@@ -78,8 +116,11 @@ $divisions = [
         'members' => 69,
         'abbreviation' => 'wow',
         'leaders' => [
-            'Commanding Officer' => '',
-            'Executive Officer' => '',
+            [
+                'name' => '',
+                'position' => '',
+                'rank' => '',
+            ],
         ]
     ],
 ];

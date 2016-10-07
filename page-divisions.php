@@ -2,7 +2,8 @@
 
 require('header.php');
 require('./assets/partials/navbar.php');
-require('./data/divisions.php')
+
+$divisions = require('./data/divisions.php')
 
 ?>
 
