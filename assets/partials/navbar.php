@@ -1,7 +1,7 @@
 <div class="primary-nav <?php /** isLandingPage() */ ?>">
     <div class="nav-texture">
         <ul>
-            <li class="home active"><a href="#">Home</a><img src="./public/images/logo-mini.png"/></li>
+            <li class="home active"><a href="#">Home</a><img src="<?= get_template_directory_uri() ?>/public/images/logo-mini.png"/></li>
             <li><a href="#">Forums</a></li>
             <li><a href="#">Divisions</a></li>
             <li><a href="#">History</a></li>

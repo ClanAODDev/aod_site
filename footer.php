@@ -2,7 +2,7 @@
     <div class="content-container">
         <div class="blurb">
             <div class="logo">
-                <img src="./public/images/official-logo.png"/>
+                <img src="<?= get_template_directory_uri() ?>/public/images/official-logo.png" />
             </div>
             <div class="blurb-text">
                 <h1>About The Angels of Death</h1>
@@ -89,5 +89,7 @@
     </div>
 </section>
 
-<script src="./public/js/libs/jquery.min.js"></script>
-<script src="./public/js/main.min.js"></script>
+<script src="<?= get_template_directory_uri() ?>/public/js/libs/jquery.min.js"></script>
+<script src="<?= get_template_directory_uri() ?>/public/js/main.min.js"></script>
+
+<?php wp_footer(); ?>

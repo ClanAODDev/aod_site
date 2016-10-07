@@ -8,5 +8,5 @@
  * GitHub Theme URI: https://github.com/flashadvocate/aod_site
  */
 
-@import "public/css/main.css";
-@import "public/fonts/fonts.css";
+@import "./public/css/main.css";
+@import "./public/fonts/fonts.css";
