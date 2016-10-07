@@ -14,7 +14,6 @@ $division = $divisions[0]; // BF
             <div class="sub-nav">
                 <ul>
                     <li><a class="smooth-scroll" href="#general">General</a></li>
-                    <li><a class="smooth-scroll" href="#command-staff">Command Staff</a></li>
                     <li><a class="smooth-scroll" href="#apply-to-division">Apply to division</a></li>
                 </ul>
             </div>
@@ -25,15 +24,14 @@ $division = $divisions[0]; // BF
             </div>
 
             <div class="game-description sub-section">
-                <p>Ubi est bi-color barcas? Est clemens triticum, cesaris. Sunt vigiles visum fatalis, dexter calcariaes. Indexs sunt classiss de primus humani generis. Rumor, fiscina, et nix. Solems assimilant in
-                    lotus quadrata! Fermiums sunt nomens de castus calcaria.Peritus xiphiass ducunt ad classis.</p>
+                <p>Ubi est bi-color barcas? Est clemens triticum, cesaris. Sunt vigiles visum fatalis, dexter calcariaes. Indexs sunt classiss de primus humani generis. Rumor, fiscina, et nix. Solems assimilant in lotus quadrata! Fermiums sunt nomens de castus calcaria.Peritus xiphiass ducunt ad classis.</p>
 
-                <p>Cur ignigena studere?Potus cito ducunt ad altus domina. Acipenser, solem, et vox. Fatalis, secundus
-                    historias foris resuscitabo de lotus, bassus solem. A falsis, capio rusticus omnia. Magisters
-                    cadunt!Assimilant mechanice ducunt ad albus lanista. Pol.Sunt voxes visum bassus, noster indictioes.</p>
+                <p>Cur ignigena studere?Potus cito ducunt ad altus domina. Acipenser, solem, et vox. Fatalis, secundus historias foris resuscitabo de lotus, bassus solem. A falsis, capio rusticus omnia. Magisters cadunt!Assimilant mechanice ducunt ad albus lanista. Pol.Sunt voxes visum bassus, noster indictioes.</p>
             </div>
 
-            <!-- makeshit iteration of leadership -->
+            <!-- makeshift iteration of leadership -->
+            <?php
+            /**
             <div class="command-staff sub-section">
                 <h2 id="command-staff">Command Staff</h2>
                 <?php foreach ($division['leaders'] as $member): ?>
@@ -45,9 +43,22 @@ $division = $divisions[0]; // BF
                     </div>
                 <?php endforeach; ?>
             </div>
+             **/
+            ?>
 
             <div class="apply sub-section">
                 <h2 id="apply-to-division">Apply to division</h2>
+                <p>In order to be eligible for membership in the Battlefield division, you must meet the following criteria:</p>
+                <ul class="bulleted">
+                    <li>Be at least 16 years of age</li>
+                    <li>Be on TeamSpeak whenever you are ingame</li>
+                    <li>Wear AOD tags while you are ingame</li>
+                    <li>Contribute to the forums once a month to maintain activity</li>
+                </ul>
+
+                <div class="centered">
+                    <a href="#" class="call-to-action-button">Apply</a>
+                </div>
             </div>
         </div>
     </section>
