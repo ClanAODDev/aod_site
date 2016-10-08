@@ -2,9 +2,8 @@
     <div class="nav-texture">
         <?php
 
-        $menu = wp_nav_menu([
-            'menu' => 'primary_nav',
-            'echo' => true
+        wp_nav_menu([
+            'theme_location' => 'primary_nav',
         ]);
 
         ?>

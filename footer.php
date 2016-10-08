@@ -40,17 +40,13 @@
         <div class="sitemap footer-section">
             <h1>Site Map</h1>
             <div class="links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Forums</a></li>
-                    <li><a href="#">Something Else</a></li>
-                    <li><a href="#">Another Something</a></li>
-                    <li><a href="#">This and That</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Forums</a></li>
-                    <li><a href="#">Something Else</a></li>
-                    <li><a href="#">Another Something</a></li>
-                </ul>
+                <?php
+
+                wp_nav_menu([
+                    'theme_location' => 'footer_sitemap_nav',
+                ]);
+
+                ?>
             </div>
             <div class="social-media">
                 <ul class="sites">
