@@ -18,6 +18,9 @@ class AODThemeSetup
     private function handleNavigation()
     {
         register_nav_menu('primary_nav', __('Primary Navigation'));
+
+        // prevent admin bar from messing with visual
+        add_filter('show_admin_bar', '__return_false');
     }
 
     private function localizationForScripts()
