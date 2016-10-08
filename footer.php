@@ -41,11 +41,9 @@
             <h1>Site Map</h1>
             <div class="links">
                 <?php
-
                 wp_nav_menu([
                     'theme_location' => 'footer_sitemap_nav',
                 ]);
-
                 ?>
             </div>
             <div class="social-media">
