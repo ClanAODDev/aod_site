@@ -1,13 +1,35 @@
+/**
+ * Set up front-end functionality
+ *
+ * @object AOD
+ */
 var ClanAOD = ClanAOD || {};
 
 (function ($) {
     ClanAOD = {
 
         setup: function () {
+            this.addHomeLink();
             this.smoothScroll();
             this.stickyNav();
         },
 
+        /**
+         * Add the home link dynamically so we can provide
+         * interactive functionality
+         */
+        addHomeLink: function () {
+            var path = AOD.path + "/public/images/",
+                homeLink = '<li class="home">' +
+                    '<a href="#" class="text-link">Home</a>' +
+                    '<img src="' + path + 'logo-mini.png"/>' +
+                    '</li>';
+            $('.primary-nav ul').prepend(homeLink);
+        },
+
+        /**
+         * Allow our anchor links to scroll smoothly
+         */
         smoothScroll: function () {
             $('.smooth-scroll').click(function (e) {
                 e.preventDefault();
@@ -17,14 +39,20 @@ var ClanAOD = ClanAOD || {};
             });
         },
 
+        /**
+         * Prompt sticky nav to stick
+         */
         stickyNav: function () {
             var scrollLocation = 700; //px
 
             $(window).bind('scroll', function () {
                 if ($(window).scrollTop() > scrollLocation) {
-                    $('.home').addClass('show-logo').closest('.primary-nav').addClass('fixed');
+                    $('.primary-nav').addClass('fixed')
+                        .find('.home').addClass('show-logo');
+
                 } else {
-                    $('.home').removeClass('show-logo').closest('.primary-nav').removeClass('fixed');
+                    $('.primary-nav').removeClass('fixed')
+                        .find('.home').removeClass('show-logo');
                 }
             });
         }

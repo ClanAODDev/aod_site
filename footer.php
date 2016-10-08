@@ -89,7 +89,4 @@
     </div>
 </section>
 
-<script src="<?= get_template_directory_uri() ?>/public/js/libs/jquery.min.js"></script>
-<script src="<?= get_template_directory_uri() ?>/public/js/main.min.js"></script>
-
 <?php wp_footer(); ?>
