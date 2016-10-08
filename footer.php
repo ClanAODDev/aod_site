@@ -1,4 +1,4 @@
-<section class="primary-footer">
+<section class="primary-footer with-shadow">
     <div class="content-container">
         <div class="blurb">
             <div class="logo">
