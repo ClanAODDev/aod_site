@@ -36,7 +36,7 @@ class AODThemeSetup
         wp_enqueue_script('jquery');
 
         wp_register_script('aod-main',
-            get_template_directory_uri() . '/public/js/main.min.js',
+            get_template_directory_uri() . '/public/js/main.min.js?v=0.1.0',
             'jquery', null, true
         );
 
