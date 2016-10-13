@@ -48,8 +48,15 @@ section
   &.with-shadow
     box-shadow 0 0 10px #000
 
-  .short-width p
-    width 50%
+  .short-width
+    display flex
+    flex-direction row
+    .blurb, .section-image
+      flex 50%
+    .section-image
+      text-align center
+
+
 
   a
     font-weight 700
