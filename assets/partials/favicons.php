@@ -1,4 +1,4 @@
-<?php $path = get_template_directory() . "/public/images/favicons-old/"; ?>
+<?php $path = get_template_directory_uri() . "/public/images/favicons-old/"; ?>
 
 <link rel="apple-touch-icon" sizes="57x57" href="<?= $path ?>apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="<?= $path ?>apple-icon-60x60.png">
