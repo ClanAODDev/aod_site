@@ -55,6 +55,10 @@ var ClanAOD = ClanAOD || {};
                         .find('.home').removeClass('show-logo');
                 }
             });
+        },
+
+        lightBox: function () {
+           
         }
     }
 })(jQuery);
