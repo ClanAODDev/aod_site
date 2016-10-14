@@ -9,7 +9,7 @@ $division = $divisions[0]; // BF
 ?>
 
     <section class="division bf">
-        <div class="content-container">
+        <div class="section-content-container">
 
             <div class="sub-nav">
                 <ul>
@@ -23,7 +23,7 @@ $division = $divisions[0]; // BF
                 <h1>Battlefield Division</h1>
             </div>
 
-            <div class="game-description sub-section">
+            <div class="game-description section-sub-section">
                 <p>Ubi est bi-color barcas? Est clemens triticum, cesaris. Sunt vigiles visum fatalis, dexter calcariaes. Indexs sunt classiss de primus humani generis. Rumor, fiscina, et nix. Solems assimilant in lotus quadrata! Fermiums sunt nomens de castus calcaria.Peritus xiphiass ducunt ad classis.</p>
 
                 <p>Cur ignigena studere?Potus cito ducunt ad altus domina. Acipenser, solem, et vox. Fatalis, secundus historias foris resuscitabo de lotus, bassus solem. A falsis, capio rusticus omnia. Magisters cadunt!Assimilant mechanice ducunt ad albus lanista. Pol.Sunt voxes visum bassus, noster indictioes.</p>
@@ -46,7 +46,7 @@ $division = $divisions[0]; // BF
              **/
             ?>
 
-            <div class="apply sub-section">
+            <div class="apply section-sub-section">
                 <h2 id="apply-to-division">Apply to division</h2>
                 <p>In order to be eligible for membership in the Battlefield division, you must meet the following criteria:</p>
                 <ul class="bulleted">
@@ -56,7 +56,7 @@ $division = $divisions[0]; // BF
                     <li>Contribute to the forums once a month to maintain activity</li>
                 </ul>
 
-                <div class="centered">
+                <div class="section--centered">
                     <a href="#" class="call-to-action-button">Apply</a>
                 </div>
             </div>

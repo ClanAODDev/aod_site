@@ -1,6 +1,6 @@
 <section class="primary-footer with-shadow">
-    <div class="content-container">
-        <div class="blurb">
+    <div class="section-content-container">
+        <div class="section-blurb">
             <div class="logo">
                 <img src="<?= get_template_directory_uri() ?>/public/images/official-logo.png"/>
             </div>
@@ -14,7 +14,7 @@
         </div>
     </div>
 
-    <div class="content-container">
+    <div class="section-content-container">
         <div class="announcements footer-section">
             <h1>Recent Announcements</h1>
             <ul>

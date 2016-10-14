@@ -21,7 +21,7 @@ var ClanAOD = ClanAOD || {};
         addHomeLink: function () {
             var path = AOD.path + "/public/images/",
                 homeLink = '<li class="home">' +
-                    '<a href="#" class="text-link">Home</a>' +
+                    '<a href="/" class="text-link">Home</a>' +
                     '<img src="' + path + 'logo-mini.png"/>' +
                     '</li>';
             $('.primary-nav ul').prepend(homeLink);
@@ -52,13 +52,12 @@ var ClanAOD = ClanAOD || {};
 
                 } else {
                     $('.primary-nav').removeClass('fixed')
-                        .find('.home').removeClass('show-logo');
+                        .find('.home').removeClass('show-logo')
                 }
             });
         },
 
         lightBox: function () {
-           
         }
     }
 })(jQuery);

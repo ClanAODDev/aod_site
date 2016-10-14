@@ -8,9 +8,9 @@ $divisions = require('./data/divisions.php')
 ?>
 
 <section class="lobby-hero">
-    <div class="content-container">
+    <div class="section-content-container">
         <h1>Gaming Divisions</h1>
-        <p class="short-width">Divisions are the lifeblood of the Angels of Death. As such, the leadership invests a great deal of effort and time into vetting each individual game for its worthiness for inclusion as an active division in the community.</p>
+        <p class="section--short-width">Divisions are the lifeblood of the Angels of Death. As such, the leadership invests a great deal of effort and time into vetting each individual game for its worthiness for inclusion as an active division in the community.</p>
 
         <div class="divisions-list">
             <div class="collection">

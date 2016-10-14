@@ -48,10 +48,10 @@ section
   &.with-shadow
     box-shadow 0 0 10px #000
 
-  .short-width
+  .section--short-width
     display flex
     flex-direction row
-    .blurb, .section-image
+    .section-blurb, .section-image
       flex 50%
     .section-image
       text-align center
@@ -60,15 +60,15 @@ section
     font-weight 700
     transition 0.6s
 
-  .content-container
+  .section-content-container
     width 75%
     margin 0 auto
     vertical-align middle
 
-    .sub-section
+    .section-sub-section
       margin-bottom 60px
 
-  .centered
+  .section--centered
     text-align center
 
 p
@@ -167,12 +167,12 @@ section.primary-footer
     font-size 18px
   p
     font-size 14px
-  .content-container
+  .section-content-container
     display flex
     flex-direction row
     flex-wrap wrap
 
-    .blurb
+    .section-blurb
       flex 100%
       display flex
       padding 0 30px 20px 0
@@ -216,7 +216,7 @@ section.primary-footer
   display inline-block
   text-align center
 .sitemap
-  .links ul
+  .sitemap-links ul
     display flex
     flex 50%
     flex-wrap wrap

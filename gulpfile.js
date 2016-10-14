@@ -27,9 +27,7 @@ gulp.task('scripts', function(){
                 console.log(error.message);
                 this.emit('end');
             }}))
-        .pipe(concat('main.js'))
         .pipe(babel())
-        .pipe(gulp.dest('public/js/'))
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
         .pipe(gulp.dest('public/js/'))
