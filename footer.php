@@ -16,36 +16,21 @@
 
     <div class="section-content-container">
         <div class="announcements footer-section">
-            <h1>Recent Announcements</h1>
-            <ul>
-                <li>
-                    <a href="#">AODTV Kickstarter with Jedi Knight's Serious Sunday</a>
-                    <span class="meta">AOD_Firestrike, 08/29/2016 12:13 PM</span>
-                </li>
-                <li>
-                    <a href="#">Overwatch Goes Full Time & July Promotions</a>
-                    <span class="meta">AOD_Drew, 08/29/2016 12:13 PM</span>
-                </li>
-                <li>
-                    <a href="#">Rainbow Six Siege Free Weekend + Half Price</a>
-                    <span class="meta">AOD_TheAlphaDogs, 08/29/2016 12:13 PM</span>
-                </li>
-                <li>
-                    <a href="#">ARK: Survival Evolved FREE Weekend + Half Off!</a>
-                    <span class="meta">AOD_Firestrike, 08/29/2016 12:13 PM</span>
-                </li>
-            </ul>
+            <h1>Clan Announcements</h1>
+            <?php do_shortcode('[show_clan_announcements url=http://www.clanaod.net/forums/external.php?type=RSS2&forumids=102]') ?>
         </div>
 
         <div class="sitemap footer-section">
             <h1>Site Map</h1>
-            <div class="links">
+
+            <div class="sitemap-links">
                 <?php
                 wp_nav_menu([
                     'theme_location' => 'footer_sitemap_nav',
                 ]);
                 ?>
             </div>
+
             <div class="social-media">
                 <ul class="sites">
                     <li>Stay Connected</li>

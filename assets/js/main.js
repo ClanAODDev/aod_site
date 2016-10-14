@@ -12,6 +12,7 @@ var ClanAOD = ClanAOD || {};
             this.addHomeLink();
             this.smoothScroll();
             this.stickyNav();
+            //this.videoModal();
         },
 
         /**
@@ -22,7 +23,7 @@ var ClanAOD = ClanAOD || {};
             var path = AOD.path + "/public/images/",
                 homeLink = '<li class="home">' +
                     '<a href="/" class="text-link">Home</a>' +
-                    '<img src="' + path + 'logo-mini.png"/>' +
+                    '<img src="' + path + 'logo-mini.png" onclick="window.location.replace(\'/\')"/>' +
                     '</li>';
             $('.primary-nav ul').prepend(homeLink);
         },
@@ -57,8 +58,11 @@ var ClanAOD = ClanAOD || {};
             });
         },
 
-        lightBox: function () {
-        }
+        // videoModal: function () {
+        //     $('.play-button, .modal-overlay').click(function () {
+        //         $('.modal').show().find('.modal-overlay').fadeToggle();
+        //     });
+        // }
     }
 })(jQuery);
 
