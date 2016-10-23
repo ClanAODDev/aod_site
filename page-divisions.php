@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Template Name: Divisions Template
+ */
+
 require('header.php');
 require('./assets/partials/navbar.php');
 
