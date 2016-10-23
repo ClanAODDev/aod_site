@@ -4,12 +4,13 @@
  * Template Name: Divisions Template
  */
 
-require('header.php');
-require('./assets/partials/navbar.php');
+$divisions = require('./data/divisions.php');
 
-$divisions = require('./data/divisions.php')
+get_header();
 
 ?>
+
+
 
 <section class="lobby-hero">
     <div class="section-content-container">
@@ -34,5 +35,6 @@ $divisions = require('./data/divisions.php')
     </div>
 </section>
 
+<?php include(get_template_directory() . '/assets/partials/navbar.php'); ?>
 
-<?php require('footer.php'); ?>
+<?php get_footer() ?>
