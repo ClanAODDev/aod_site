@@ -1,15 +1,15 @@
 <?php
 
+get_header();
+
 /**
  * Template Name: Divisions Template
  */
 
-$divisions = require('./data/divisions.php');
+$divisions = require(get_template_directory() . '/data/divisions.php');
 
-get_header();
 
 ?>
-
 
 
 <section class="lobby-hero">
@@ -35,6 +35,5 @@ get_header();
     </div>
 </section>
 
-<?php include(get_template_directory() . '/assets/partials/navbar.php'); ?>
 
 <?php get_footer() ?>
