@@ -6,16 +6,19 @@ get_header();
  * Template Name: Divisions Template
  */
 
-$divisions = require(get_template_directory() . '/data/divisions.php');
+$divisions = require(get_template_directory() . '/data/divisions.php'); ?>
 
+<?php include(get_template_directory() . '/assets/partials/navbar.php'); ?>
 
-?>
-
-
-<section class="lobby-hero">
+<section class="lobby">
     <div class="section-content-container">
-        <h1>Gaming Divisions</h1>
-        <p class="section--short-width">Divisions are the lifeblood of the Angels of Death. As such, the leadership invests a great deal of effort and time into vetting each individual game for its worthiness for inclusion as an active division in the community.</p>
+        <div class="section--short-width">
+            <div class="section-image"></div>
+            <div class="section-blurb">
+                <h1>Gaming Divisions</h1>
+                <p>Divisions are the lifeblood of the Angels of Death. As such, the leadership invests a great deal of effort and time into vetting each individual game for its worthiness for inclusion as an active division in the community.</p>
+            </div>
+        </div>
 
         <div class="divisions-list">
             <div class="collection">
