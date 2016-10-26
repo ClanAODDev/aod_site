@@ -47,15 +47,17 @@ var ClanAOD = ClanAOD || {};
             var scrollLocation = 700; //px
 
             $(window).bind('scroll', function () {
-                if ($(window).scrollTop() > scrollLocation) {
-                    $('.primary-nav').addClass('fixed')
-                        .find('.home').addClass('show-logo');
-
-                } else {
-                    $('.primary-nav').removeClass('fixed')
-                        .find('.home').removeClass('show-logo')
+                    if ($('.stay-fixed').length > 0) {
+                        $('.stay-fixed').find('.home').addClass('show-logo');
+                    } else if ($(window).scrollTop() > scrollLocation) {
+                        $('.primary-nav').addClass('fixed')
+                            .find('.home').addClass('show-logo');
+                    } else {
+                        $('.primary-nav').removeClass('fixed')
+                            .find('.home').removeClass('show-logo')
+                    }
                 }
-            });
+            );
         },
 
         // videoModal: function () {
