@@ -21,14 +21,10 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
 
             <div id="general" class="game-header">
                 <div class="game bf"></div>
-                <h1><?php the_title(); ?> Division</h1>
+                <h1><?php the_title(); ?></h1>
             </div>
 
-            <div class="game-description section-sub-section">
-                <p>Ubi est bi-color barcas? Est clemens triticum, cesaris. Sunt vigiles visum fatalis, dexter calcariaes. Indexs sunt classiss de primus humani generis. Rumor, fiscina, et nix. Solems assimilant in lotus quadrata! Fermiums sunt nomens de castus calcaria.Peritus xiphiass ducunt ad classis.</p>
-
-                <p>Cur ignigena studere?Potus cito ducunt ad altus domina. Acipenser, solem, et vox. Fatalis, secundus historias foris resuscitabo de lotus, bassus solem. A falsis, capio rusticus omnia. Magisters cadunt!Assimilant mechanice ducunt ad albus lanista. Pol.Sunt voxes visum bassus, noster indictioes.</p>
-            </div>
+            <?php the_content(); ?>
 
             <!-- makeshift iteration of leadership -->
             <?php
@@ -47,20 +43,6 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
              **/
             ?>
 
-            <div class="apply section-sub-section">
-                <h2>Apply to division</h2>
-                <p>In order to be eligible for membership in the Battlefield division, you must meet the following criteria:</p>
-                <ul class="bulleted">
-                    <li>Be at least 16 years of age</li>
-                    <li>Be on TeamSpeak whenever you are ingame</li>
-                    <li>Wear AOD tags while you are ingame</li>
-                    <li>Contribute to the forums once a month to maintain activity</li>
-                </ul>
-
-                <div class="section--centered">
-                    <a href="#" class="call-to-action-button">Apply</a>
-                </div>
-            </div>
         </div>
     </section>
 
