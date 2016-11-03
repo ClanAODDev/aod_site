@@ -27,7 +27,7 @@ var ClanAOD = ClanAOD || {};
                     '</li>';
             $('.primary-nav ul').prepend(homeLink);
         },
-
+ 
         /**
          * Allow our anchor links to scroll smoothly
          */

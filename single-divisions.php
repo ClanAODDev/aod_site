@@ -1,16 +1,13 @@
 <?php
+get_header();
 
 /**
- * Template Name: Division Template
+ * Template Name: Divisions Template
  */
 
-require('header.php');
-require('./assets/partials/navbar.php');
+include(get_template_directory() . '/assets/partials/navbar.php'); ?>
 
-$divisions = require('./data/divisions.php');
-$division = $divisions[0]; // BF
-
-?>
+<?php if (have_posts()): while (have_posts()): the_post(); ?>
 
     <section class="division bf">
         <div class="section-content-container">
@@ -24,7 +21,7 @@ $division = $divisions[0]; // BF
 
             <div id="general" class="game-header">
                 <div class="game bf"></div>
-                <h1>Battlefield Division</h1>
+                <h1><?php the_title(); ?> Division</h1>
             </div>
 
             <div class="game-description section-sub-section">
@@ -36,22 +33,22 @@ $division = $divisions[0]; // BF
             <!-- makeshift iteration of leadership -->
             <?php
             /**
-            <div class="command-staff sub-section">
-                <h2 id="command-staff">Command Staff</h2>
-                <?php foreach ($division['leaders'] as $member): ?>
-                    <div class="member">
-                        <div class="name <?= strtolower($member['rank']) ?>">
-                            <?= "{$member['rank']} {$member['name']}" ?>
-                        </div>
-                        <div class="position"><?= $member['position'] ?></div>
-                    </div>
-                <?php endforeach; ?>
-            </div>
+             * <div class="command-staff sub-section">
+             * <h2 id="command-staff">Command Staff</h2>
+             * <?php foreach ($division['leaders'] as $member): ?>
+             * <div class="member">
+             * <div class="name <?= strtolower($member['rank']) ?>">
+             * <?= "{$member['rank']} {$member['name']}" ?>
+             * </div>
+             * <div class="position"><?= $member['position'] ?></div>
+             * </div>
+             * <?php endforeach; ?>
+             * </div>
              **/
             ?>
 
             <div class="apply section-sub-section">
-                <h2 id="apply-to-division">Apply to division</h2>
+                <h2>Apply to division</h2>
                 <p>In order to be eligible for membership in the Battlefield division, you must meet the following criteria:</p>
                 <ul class="bulleted">
                     <li>Be at least 16 years of age</li>
@@ -67,4 +64,6 @@ $division = $divisions[0]; // BF
         </div>
     </section>
 
-<?php require('footer.php'); ?>
+<?php endwhile; endif; ?>
+
+<?php get_footer() ?>
