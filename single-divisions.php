@@ -7,10 +7,10 @@ use ClanAOD\Helpers;
  * Template Name: Divisions Template
  */
 
-$bg = meta('abbreviation');
+$abbrev = meta('abbreviation');
 $url = get_template_directory_uri() . '/public/images/';
 
-$divisionBg = "url('{$url}division-headers/{$bg}.jpg')";
+$divisionBg = "url('{$url}division-headers/{$abbrev}.jpg')";
 $borderBg = "url('{$url}division-bg-border.jpg')";
 
 include(get_template_directory() . '/assets/partials/navbar.php'); ?>
@@ -28,7 +28,7 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
             </div>
 
             <div id="general" class="game-header">
-                <div class="game bf"></div>
+                <div class="game <?=$abbrev ?>"></div>
                 <h1><?php the_title(); ?></h1>
             </div>
 
