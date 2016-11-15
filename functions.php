@@ -1,5 +1,7 @@
 <?php
 
+use ClanAOD\Helpers;
+
 /**
  * Set up theme-specific functionality
  */
@@ -51,5 +53,23 @@ class AODThemeSetup
 
     }
 }
+
+/**
+ * Get meta data - theme
+ *
+ * @param $field
+ * @return mixed
+ */
+function meta($field)
+{
+    global $post;
+
+    return Helpers::getField(
+        "division_settings_",
+        $field,
+        $post->ID
+    );
+}
+
 
 new AODThemeSetup();

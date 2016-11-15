@@ -1,17 +1,25 @@
 <?php
 get_header();
 
+use ClanAOD\Helpers;
+
 /**
  * Template Name: Divisions Template
  */
+
+$bg = meta('abbreviation');
+$url = get_template_directory_uri() . '/public/images/';
+
+$divisionBg = "url('{$url}division-headers/{$bg}.jpg')";
+$borderBg = "url('{$url}division-bg-border.jpg')";
 
 include(get_template_directory() . '/assets/partials/navbar.php'); ?>
 
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
 
-    <section class="division bf">
+    <section class="division"
+             style="background: <?= "{$divisionBg} no-repeat, {$borderBg} repeat-x" ?>; background-position: top center;">
         <div class="section-content-container">
-
             <div class="sub-nav">
                 <ul>
                     <li><a class="smooth-scroll" href="#general">General</a></li>
@@ -46,6 +54,5 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
         </div>
     </section>
 
-<?php endwhile; endif; ?>
-
-<?php get_footer() ?>
+<?php endwhile; endif;
+get_footer();
