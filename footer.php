@@ -20,7 +20,7 @@
             <?php do_shortcode('[show_clan_announcements url=http://www.clanaod.net/forums/external.php?type=RSS2&forumids=102]') ?>
         </div>
 
-        <div class="sitemap footer-section">
+        <div class="sitemap footer-section qtr-width">
             <h1>Site Map</h1>
 
             <div class="sitemap-links">
@@ -43,16 +43,7 @@
         </div>
 
         <div class="footer-section full-width twitter-feed">
-            <h1>Twitter Activity</h1>
-            <ul>
-                <li><a href="#">@officialclanaod</a> How swashbuckling. You taste like an anchor. <a href="#">about 20
-                        minutes ago</a></li>
-                <li><a href="#">@officialclanaod</a> Try slicing tuna platter garnished with worcestershire sauce.
-                    Marinate a handfull teaspoons of white bread in nine tablespoons of coconut milk. <a href="#">about
-                        an hour ago</a></li>
-                <li><a href="#">@officialclanaod</a> Pins laugh from greeds like golden cockroachs. Ahoy, halitosis! The
-                    shark sings amnesty like a rainy mainland. <a href="#">about 3 hours ago</a></li>
-            </ul>
+            <?php do_shortcode('[twitter-feed]'); ?>
         </div>
 
         <!--
