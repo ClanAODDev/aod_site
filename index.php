@@ -1,7 +1,9 @@
 <?php get_header() ?>
 
 
-    <iframe class="intro-video" src="https://www.youtube.com/embed/ZCpfySvao9s" frameborder="0" width="700px" height="500px" allowfullscreen></iframe>
+    <div class="intro-video">
+        <iframe src="https://www.youtube.com/embed/ZCpfySvao9s" frameborder="0" width="700px" height="500px" allowfullscreen></iframe>
+    </div>
 
 
     <div class="hero-video">
