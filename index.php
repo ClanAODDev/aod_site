@@ -2,8 +2,8 @@
 
 
     <div class="intro-video">
-        <iframe src="https://www.youtube.com/embed/ZCpfySvao9s?controls=0&autoplay=0&showinfo=0"
-                frameborder="0" width="700px" height="500px" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/ZCpfySvao9s?autoplay=0&showinfo=0&enablejsapi=1"
+                id="video-iframe" frameborder="0" width="960px" height="750px" allowfullscreen></iframe>
     </div>
 
 

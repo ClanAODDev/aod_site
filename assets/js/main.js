@@ -62,9 +62,17 @@ var ClanAOD = ClanAOD || {};
 
         videoModal: function () {
             $(".intro-video").easyModal({
-                overlayOpacity: 0.9,
+                overlayOpacity: 0.75,
                 overlayColor: "#000",
-                autoOpen: false
+                autoOpen: false,
+                onClose: function() {
+                    var haltPlaybackMessage = '{"event":"command","func":"stopVideo","args":""}';
+                    document.getElementById('video-iframe').contentWindow.postMessage(haltPlaybackMessage, '*');
+                },
+                onOpen: function() {
+                    var startPlaybackMessage = '{"event":"command","func":"playVideo","args":""}';
+                    document.getElementById('video-iframe').contentWindow.postMessage(startPlaybackMessage, '*');
+                }
             });
 
             $('.play-button').click(function(e){
