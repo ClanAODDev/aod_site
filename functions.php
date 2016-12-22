@@ -43,11 +43,11 @@ class AODThemeSetup
         wp_enqueue_script('jquery');
 
         wp_register_script('easy-modal',
-            get_template_directory_uri() . '/public/js/jquery.easyModal.min.js?v=0.1.0', 'jquery', null, true
+            get_template_directory_uri() . '/public/js/jquery.easyModal.min.js?v=0.1.1', 'jquery', null, true
         );
 
         wp_register_script('aod-main',
-            get_template_directory_uri() . '/public/js/main.min.js?v=0.1.0', 'jquery', null, true
+            get_template_directory_uri() . '/public/js/main.min.js?v=0.1.1', 'jquery', null, true
         );
 
         $this->localizationForScripts();
