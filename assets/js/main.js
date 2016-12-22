@@ -13,7 +13,7 @@ var ClanAOD = ClanAOD || {};
             this.addHomeLink();
             this.smoothScroll();
             this.stickyNav();
-            //this.videoModal();
+            this.videoModal();
         },
         /**
          * Add the home link dynamically so we can provide
@@ -60,11 +60,17 @@ var ClanAOD = ClanAOD || {};
             );
         },
 
-        // videoModal: function () {
-        //     $('.play-button, .modal-overlay').click(function () {
-        //         $('.modal').show().find('.modal-overlay').fadeToggle();
-        //     });
-        // }
+        videoModal: function () {
+            $(".modal").easyModal({
+                overlayOpacity: 0.9,
+                overlayColor: "#000",
+            });
+
+            $('.play-button').click(function(e){
+                $('.modal').trigger('openModal');
+                e.preventDefault();
+            });
+        },
 
         animateHistory: function () {
             var timelineBlocks = $('.cd-timeline-block'),
