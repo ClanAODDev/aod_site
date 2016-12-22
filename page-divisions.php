@@ -1,12 +1,17 @@
 <?php
 
-get_header();
-
 /**
  * Template Name: Divisions Template
  */
 
-$divisions = require(get_template_directory() . '/data/divisions.php'); ?>
+use ClanAOD\Repositories\DivisionRepository;
+
+get_header();
+
+//$divisions = require(get_template_directory() . '/data/divisions.php');
+$divisions = DivisionRepository::allDivisions();
+
+?>
 
 <?php include(get_template_directory() . '/assets/partials/navbar.php'); ?>
 
@@ -22,17 +27,17 @@ $divisions = require(get_template_directory() . '/data/divisions.php'); ?>
 
         <div class="divisions-list">
             <div class="collection">
-                <?php foreach ($divisions as $division): ?>
+                <?php foreach ($divisions as $post): setup_postdata($post); ?>
                     <div class="item game-button">
                         <div class="icon">
-                            <div class="game <?= $division['abbreviation'] ?>"></div>
+                            <div class="game <?= meta('abbreviation'); ?>"></div>
                         </div>
                         <div class="meta">
-                            <div class="title"><?= $division['name'] ?></div>
-                            <div class="members"><?= $division['members'] ?> members</div>
+                            <div class="title"><?= $post->post_title; ?></div>
+                            <div class="members"></div>
                         </div>
                     </div>
-                <?php endforeach; ?>
+                <?php endforeach; wp_reset_postdata(); ?>
             </div>
         </div>
     </div>
