@@ -34,7 +34,7 @@ $divisions = DivisionRepository::allDivisions();
                         </div>
                         <div class="meta">
                             <div class="title"><?= $post->post_title; ?></div>
-                            <div class="members"></div>
+                            <div class="members">## members</div>
                         </div>
                     </a>
                 <?php endforeach; wp_reset_postdata(); ?>
