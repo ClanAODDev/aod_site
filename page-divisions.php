@@ -28,7 +28,7 @@ $divisions = DivisionRepository::allDivisions();
         <div class="divisions-list">
             <div class="collection">
                 <?php foreach ($divisions as $post): setup_postdata($post); ?>
-                    <div class="item game-button">
+                    <a href="<?= $post->guid ?>" class="item game-button">
                         <div class="icon">
                             <div class="game <?= meta('abbreviation'); ?>"></div>
                         </div>
@@ -36,7 +36,7 @@ $divisions = DivisionRepository::allDivisions();
                             <div class="title"><?= $post->post_title; ?></div>
                             <div class="members"></div>
                         </div>
-                    </div>
+                    </a>
                 <?php endforeach; wp_reset_postdata(); ?>
             </div>
         </div>
