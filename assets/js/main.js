@@ -63,7 +63,7 @@ var ClanAOD = ClanAOD || {};
         videoModal: function () {
             $(".modal").easyModal({
                 overlayOpacity: 0.9,
-                overlayColor: "#000",
+                overlayColor: "#000"
             });
 
             $('.play-button').click(function(e){
