@@ -64,7 +64,6 @@ var ClanAOD = ClanAOD || {};
             $(".intro-video").easyModal({
                 overlayOpacity: 0.9,
                 overlayColor: "#000",
-                updateZIndexOnOpen: true
             });
 
             $('.play-button').click(function(e){
