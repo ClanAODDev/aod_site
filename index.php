@@ -1,10 +1,8 @@
 <?php get_header() ?>
 
-    <div class="modal">
-        <div class="intro-video">
-            <iframe src="https://www.youtube.com/embed/ZCpfySvao9s" frameborder="0" width="700px" height="500px" allowfullscreen></iframe>
-        </div>
-    </div>
+
+    <iframe class="intro-video" src="https://www.youtube.com/embed/ZCpfySvao9s" frameborder="0" width="700px" height="500px" allowfullscreen></iframe>
+
 
     <div class="hero-video">
         <div class="video-container">
