@@ -1,4 +1,12 @@
-<?php get_header() ?>
+<?php
+
+/**
+ * Main landing page
+ */
+
+get_header();
+
+?>
 
 
     <div class="intro-video">

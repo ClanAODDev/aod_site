@@ -65,20 +65,37 @@ var ClanAOD = ClanAOD || {};
                 overlayOpacity: 0.75,
                 overlayColor: "#000",
                 autoOpen: false,
-                onClose: function() {
-                    var haltPlaybackMessage = '{"event":"command","func":"stopVideo","args":""}';
-                    document.getElementById('video-iframe').contentWindow.postMessage(haltPlaybackMessage, '*');
+                onClose: function () {
+                    document.getElementById('video-iframe')
+                        .contentWindow
+                        .postMessage(ClanAOD.postYTMessage('stop'), '*');
                 },
-                onOpen: function() {
-                    var startPlaybackMessage = '{"event":"command","func":"playVideo","args":""}';
-                    document.getElementById('video-iframe').contentWindow.postMessage(startPlaybackMessage, '*');
+                onOpen: function () {
+                    document.getElementById('video-iframe')
+                        .contentWindow
+                        .postMessage(ClanAOD.postYTMessage('start'), '*');
                 }
             });
 
-            $('.play-button').click(function(e){
+            $('.play-button').click(function (e) {
                 $('.intro-video').trigger('openModal');
                 e.preventDefault();
             });
+        },
+
+        /**
+         * Handle API calls to iframe youtube content
+         *
+         * @param action
+         * @returns {*}
+         */
+        postYTMessage: function (action) {
+            switch (action) {
+                case "start":
+                    return '{"event":"command","func":"playVideo","args":""}';
+                case "stop":
+                    return '{"event":"command","func":"stopVideo","args":""}';
+            }
         },
 
         animateHistory: function () {
@@ -89,21 +106,25 @@ var ClanAOD = ClanAOD || {};
             hideBlocks(timelineBlocks, offset);
 
             //on scolling, show/animate timeline blocks when enter the viewport
-            $(window).on('scroll', function(){
+            $(window).on('scroll', function () {
                 (!window.requestAnimationFrame)
-                    ? setTimeout(function(){ showBlocks(timelineBlocks, offset); }, 100)
-                    : window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
+                    ? setTimeout(function () {
+                        showBlocks(timelineBlocks, offset);
+                    }, 100)
+                    : window.requestAnimationFrame(function () {
+                        showBlocks(timelineBlocks, offset);
+                    });
             });
 
             function hideBlocks(blocks, offset) {
-                blocks.each(function(){
-                    ( $(this).offset().top > $(window).scrollTop()+$(window).height()*offset ) && $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+                blocks.each(function () {
+                    ( $(this).offset().top > $(window).scrollTop() + $(window).height() * offset ) && $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
                 });
             }
 
             function showBlocks(blocks, offset) {
-                blocks.each(function(){
-                    ( $(this).offset().top <= $(window).scrollTop()+$(window).height()*offset && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) && $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+                blocks.each(function () {
+                    ( $(this).offset().top <= $(window).scrollTop() + $(window).height() * offset && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) && $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
                 });
             }
         },
