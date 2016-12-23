@@ -6,14 +6,17 @@
 var ClanAOD = ClanAOD || {};
 
 (function ($) {
+
     ClanAOD = {
 
         setup: function () {
+
             this.animateHistory();
             this.addHomeLink();
             this.smoothScroll();
             this.stickyNav();
             this.videoModal();
+
         },
         /**
          * Add the home link dynamically so we can provide
