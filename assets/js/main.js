@@ -108,7 +108,7 @@ var ClanAOD = ClanAOD || {};
 
                 if(headings.length >= 1) {
                     // construct an ordered list of links
-                    var menuList = $(target).find('ul');
+                    var menuList = document.createElement("UL");
 
                     for(var i=0; i < headings.length; i++) {
                         var anchorName = "";
@@ -126,19 +126,19 @@ var ClanAOD = ClanAOD || {};
                         var menuLink = document.createElement("A");
                         menuLink.setAttribute("href", "#" + anchorName);
                         menuLink.setAttribute("class", "smooth-scroll");
-                        menuLink.append(document.createTextNode(headingText));
+                        menuLink.appendChild(document.createTextNode(headingText));
 
                         var listItem = document.createElement("LI");
-                        listItem.append(menuLink);
+                        listItem.appendChild(menuLink);
 
-                        menuList.append(listItem);
+                        menuList.appendChild(listItem);
                     }
 
                     // remove all nodes from inside target element
                     // while(target.hasChildNodes()) target.removeChild(target.firstChild);
 
                     // insert our generated menu into the target element
-                    target.append(menuList);
+                    target.appendChild(menuList);
                 }
 
             })("sub-nav", "h2");
