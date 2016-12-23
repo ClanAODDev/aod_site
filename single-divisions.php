@@ -20,10 +20,9 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
     <section class="division"
              style="background: <?= "{$divisionBg} no-repeat, {$borderBg} repeat-x" ?>; background-position: top center;">
         <div class="section-content-container">
-            <div class="sub-nav">
+            <div class="sub-nav" id="sub-nav">
                 <ul>
                     <li><a class="smooth-scroll" href="#general">General</a></li>
-                    <li><a class="smooth-scroll" href="#apply-to-division">Apply to division</a></li>
                 </ul>
             </div>
 
@@ -55,4 +54,4 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
     </section>
 
 <?php endwhile; endif;
-get_footer();
+get_footer(); ?>
