@@ -37,4 +37,19 @@ get_header();
     <?php the_content(); ?>
 <?php endwhile; endif; ?>
 
+<script type="text/javascript">
+    jQuery(function ($) {
+        /**
+         * Handle social media links
+         */
+        $(".social-media-sites li").click(function () {
+            var link = $(this).attr('data-link');
+            if (link) {
+                window.open(link);
+            }
+        })
+    })
+</script>
+
 <?php get_footer() ?>
+
