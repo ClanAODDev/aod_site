@@ -32,12 +32,25 @@
             </div>
 
             <div class="social-media">
-                <ul class="sites">
-                    <li>Stay Connected</li>
-                    <li><a href="#"><i class="twitter">T</i></a></li>
-                    <li><a href="#"><i class="youtube">Y</i></a></li>
-                    <li><a href="#"><i class="twitch">T</i></a></li>
-                    <li><a href="#"><i class="steam">S</i></a></li>
+
+                <ul class="soc">
+                    <li>
+                        <a class="soc-twitter" target="_blank"
+                           href="https://twitter.com/officialclanaod"></a></li>
+                    <li>
+                        <a class="soc-facebook" target="_blank"
+                           href="https://www.facebook.com/groups/613636715314339/"></a>
+                    </li>
+                    <li>
+                        <a class="soc-steam" target="_blank"
+                           href="http://steamcommunity.com/groups/clanaod"></a></li>
+                    <li>
+                        <a class="soc-youtube" target="_blank"
+                           href="http://bit.ly/2dKbL9I"></a></li>
+                    <li>
+                        <a class="soc-twitch soc-icon-last" target="_blank"
+                           href="https://www.twitch.tv/clanaodstream"></a>
+                    </li>
                 </ul>
             </div>
         </div>
