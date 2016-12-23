@@ -109,7 +109,6 @@ var ClanAOD = ClanAOD || {};
                 if(headings.length >= 1) {
                     // construct an ordered list of links
                     var menuList = document.createElement("UL");
-
                     for(var i=0; i < headings.length; i++) {
                         var anchorName = "";
                         if(headings[i].id) {
@@ -135,7 +134,7 @@ var ClanAOD = ClanAOD || {};
                     }
 
                     // remove all nodes from inside target element
-                    // while(target.hasChildNodes()) target.removeChild(target.firstChild);
+                    while(target.hasChildNodes()) target.removeChild(target.firstChild);
 
                     // insert our generated menu into the target element
                     target.appendChild(menuList);
