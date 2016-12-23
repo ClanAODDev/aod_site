@@ -24,3 +24,21 @@
     src: url('32291B_0_0.eot');
     src: url('32291B_0_0.eot?#iefix') format('embedded-opentype'), url('32291B_0_0.woff2') format('woff2'), url('32291B_0_0.woff') format('woff'), url('32291B_0_0.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'si';
+    src: url('socicon.eot');
+    src: url('socicon.eot?#iefix') format('embedded-opentype'),
+    url('socicon.woff') format('woff'),
+    url('socicon.ttf') format('truetype'),
+    url('socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(socicon.svg) format(svg);
+    }
+}
