@@ -21,7 +21,7 @@ gulp.task('styles', function(){
 });
 
 gulp.task('scripts', function(){
-    return gulp.src('assets/js/**/*.js')
+    return gulp.src(['assets/js/**/*.js', '!assets/js/modernizr.js'])
         .pipe(plumber({
             errorHandler: function (error) {
                 console.log(error.message);
