@@ -20,7 +20,7 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
     <section class="division"
              style="background: <?= "{$divisionBg} no-repeat, {$borderBg} repeat-x" ?>; background-position: top center;">
         <div class="section-content-container">
-            <div class="sub-nav" id="sub-nav"></div>
+            <div id="sub-nav"></div>
 
             <div id="general" class="game-header">
                 <div class="game <?=$abbrev ?>"></div>
