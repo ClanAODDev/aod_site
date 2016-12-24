@@ -11,11 +11,10 @@ var ClanAOD = ClanAOD || {};
 
         setup: function () {
 
-            this.handleAutoMenu();
             this.addHomeLink();
-            this.smoothScroll();
             this.stickyNav();
             this.videoModal();
+            this.initAutoMenu();
 
         },
         /**
@@ -30,8 +29,6 @@ var ClanAOD = ClanAOD || {};
                     '</li>';
             $('.primary-nav ul').prepend(homeLink);
         },
-
-
         /**
          * Allow our anchor links to scroll smoothly
          */
@@ -39,10 +36,20 @@ var ClanAOD = ClanAOD || {};
             $('.smooth-scroll').click(function (e) {
                 e.preventDefault();
                 var targetId = $(this).attr("href");
-                var top = $(targetId).offset().top;
+                var top = $(targetId).offset().top - 90;
                 $('html, body').stop().animate({scrollTop: top}, 1500);
             });
         },
+
+        /**
+         * Init auto menu if we have a subnav
+         */
+        initAutoMenu: function () {
+            if ($('#sub-nav').length) {
+                this.handleAutoMenu("sub-nav", "h2");
+            }
+        },
+
         /**
          * Prompt sticky nav to stick
          */
@@ -71,12 +78,12 @@ var ClanAOD = ClanAOD || {};
                 onClose: function () {
                     document.getElementById('video-iframe')
                         .contentWindow
-                        .postMessage(ClanAOD.postYTMessage('stop'), '*');
+                        .postMessage(this.postYTMessage('stop'), '*');
                 },
                 onOpen: function () {
                     document.getElementById('video-iframe')
                         .contentWindow
-                        .postMessage(ClanAOD.postYTMessage('start'), '*');
+                        .postMessage(this.postYTMessage('start'), '*');
                 }
             });
 
@@ -101,48 +108,48 @@ var ClanAOD = ClanAOD || {};
             }
         },
 
-        handleAutoMenu: function () {
-            (function(targetId, headingTag) {
-                var target = document.getElementById(targetId);
-                var headings = document.getElementsByTagName(headingTag || "h2");
+        handleAutoMenu: function (targetId, headingTag) {
 
-                if(headings.length >= 1) {
-                    // construct an ordered list of links
-                    var menuList = document.createElement("UL");
-                    for(var i=0; i < headings.length; i++) {
-                        var anchorName = "";
-                        if(headings[i].id) {
-                            anchorName = headings[i].id;
-                        } else {
-                            anchorName = "section_" + i;
-                            headings[i].setAttribute("id", anchorName);
-                        }
+            var target = document.getElementById(targetId);
+            var headings = document.getElementsByTagName(headingTag || "h2");
 
-                        var headingText = headings[i].firstChild.nodeValue
-
-                        headings[i].firstChild.nodeValue = headingText;
-
-                        var menuLink = document.createElement("A");
-                        menuLink.setAttribute("href", "#" + anchorName);
-                        menuLink.setAttribute("class", "smooth-scroll");
-                        menuLink.appendChild(document.createTextNode(headingText));
-
-                        var listItem = document.createElement("LI");
-                        listItem.appendChild(menuLink);
-
-                        menuList.appendChild(listItem);
+            if (headings.length >= 1) {
+                // construct an ordered list of links
+                var menuList = document.createElement("UL");
+                for (var i = 0; i < headings.length; i++) {
+                    var anchorName = "";
+                    if (headings[i].id) {
+                        anchorName = headings[i].id;
+                    } else {
+                        anchorName = "section_" + i;
+                        headings[i].setAttribute("id", anchorName);
                     }
 
-                    // remove all nodes from inside target element
-                    while(target.hasChildNodes()) target.removeChild(target.firstChild);
+                    var headingText = headings[i].firstChild.nodeValue
 
-                    // insert our generated menu into the target element
-                    target.appendChild(menuList);
+                    headings[i].firstChild.nodeValue = headingText;
+
+                    var menuLink = document.createElement("A");
+                    menuLink.setAttribute("href", "#" + anchorName);
+                    menuLink.setAttribute("class", "smooth-scroll");
+                    menuLink.appendChild(document.createTextNode(headingText));
+
+                    var listItem = document.createElement("LI");
+                    listItem.appendChild(menuLink);
+
+                    menuList.appendChild(listItem);
                 }
 
-            })("sub-nav", "h2");
+                // remove all nodes from inside target element
+                while (target.hasChildNodes()) target.removeChild(target.firstChild);
+
+                // insert our generated menu into the target element
+                target.appendChild(menuList);
+            }
+
         }
     }
 })(jQuery);
 
 ClanAOD.setup();
+ClanAOD.smoothScroll();
