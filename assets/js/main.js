@@ -46,7 +46,7 @@ var ClanAOD = ClanAOD || {};
          */
         initAutoMenu: function () {
             if ($('#sub-nav').length) {
-                this.handleAutoMenu("sub-nav", "h2");
+                ClanAOD.handleAutoMenu("sub-nav", "h2");
             }
         },
 
@@ -78,12 +78,12 @@ var ClanAOD = ClanAOD || {};
                 onClose: function () {
                     document.getElementById('video-iframe')
                         .contentWindow
-                        .postMessage(this.postYTMessage('stop'), '*');
+                        .postMessage(ClanAOD.postYTMessage('stop'), '*');
                 },
                 onOpen: function () {
                     document.getElementById('video-iframe')
                         .contentWindow
-                        .postMessage(this.postYTMessage('start'), '*');
+                        .postMessage(ClanAOD.postYTMessage('start'), '*');
                 }
             });
 
