@@ -11,23 +11,24 @@ var ClanAOD = ClanAOD || {};
 
         setup: function () {
 
-            this.addHomeLink();
+            this.addDynamicLinks();
             this.stickyNav();
             this.videoModal();
             this.initAutoMenu();
 
         },
+
         /**
-         * Add the home link dynamically so we can provide
-         * interactive functionality
+         * Add dynamic links to navigation
          */
-        addHomeLink: function () {
+        addDynamicLinks: function () {
             var path = AOD.path + "/public/images/",
                 homeLink = '<li class="home">' +
                     '<a href="/" class="text-link">Home</a>' +
                     '<img src="' + path + 'logo-mini.png" onclick="window.location.replace(\'/\')"/>' +
-                    '</li>';
-            $('.primary-nav ul').prepend(homeLink);
+                    '</li>',
+                applyLink = '<li><a data-apply-button href="#">Apply</a>';
+            $('.primary-nav ul').prepend(homeLink).append(applyLink);
         },
         /**
          * Allow our anchor links to scroll smoothly

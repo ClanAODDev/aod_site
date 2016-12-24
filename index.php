@@ -41,6 +41,8 @@ get_header();
 
     jQuery(function ($) {
 
+        $(".apply")
+
         /**
          * Handle social media links
          */
