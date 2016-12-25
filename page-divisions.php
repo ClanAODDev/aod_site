@@ -4,16 +4,19 @@
  * Template Name: Divisions Template
  */
 
+use ClanAOD\Helpers;
+use ClanAOD\Tracker;
 use ClanAOD\Repositories\DivisionRepository;
 
 get_header();
 
-//$divisions = require(get_template_directory() . '/data/divisions.php');
 $divisions = DivisionRepository::allDivisions();
 
-?>
+$divisionCounts = (new Tracker())->getDivisionInfo();
 
-<?php include(get_template_directory() . '/assets/partials/navbar.php'); ?>
+$counts = Helpers::filterDivisionCounts($divisionCounts);
+
+include(get_template_directory() . '/assets/partials/navbar.php'); ?>
 
 <section class="lobby">
     <div class="section-content-container">
@@ -28,13 +31,14 @@ $divisions = DivisionRepository::allDivisions();
         <div class="divisions-list">
             <div class="collection">
                 <?php foreach ($divisions as $post): setup_postdata($post); ?>
+                <?php $abbreviation = meta('abbreviation'); ?>
                     <a href="<?= $post->guid ?>" class="item game-button">
                         <div class="icon">
-                            <div class="game <?= meta('abbreviation'); ?>"></div>
+                            <div class="game <?= $abbreviation ?>"></div>
                         </div>
                         <div class="meta">
                             <div class="title"><?= $post->post_title; ?></div>
-                            <div class="members">## Members</div>
+                            <div class="members"><?= $counts[$abbreviation] ?> Members</div>
                         </div>
                     </a>
                 <?php endforeach; wp_reset_postdata(); ?>
