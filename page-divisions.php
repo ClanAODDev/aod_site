@@ -34,7 +34,7 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
                 <?php $abbreviation = meta('abbreviation'); ?>
                     <a href="<?= $post->guid ?>" class="item game-button">
                         <div class="icon">
-                            <div class="game <?= $abbreviation ?>"></div>
+                            <img src="<?= meta('icon'); ?>" />
                         </div>
                         <div class="meta">
                             <div class="title"><?= $post->post_title; ?></div>
