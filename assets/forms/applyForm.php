@@ -8,7 +8,7 @@ $divisions = DivisionRepository::allDivisions(); ?>
     <h2>Apply for a division</h2>
     <div class="games-listing">
         <?php foreach ($divisions as $post): setup_postdata($post); ?>
-            <img src="<?= meta('division_icon'); ?>" />
+            <img class="game" src="<?= meta('division_icon'); ?>" />
         <?php endforeach;
         wp_reset_postdata(); ?>
     </div>
