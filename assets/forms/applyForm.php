@@ -12,5 +12,7 @@ $divisions = DivisionRepository::allDivisions(); ?>
         <?php endforeach;
         wp_reset_postdata(); ?>
     </div>
+
+    <p>You will be taken to our forums to complete the application process.</p>
 </div>
 
