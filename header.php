@@ -13,3 +13,5 @@
     <?php wp_head(); ?>
 </head>
 <body>
+
+<?php include(get_template_directory() . '/assets/forms/applyForm.php'); ?>

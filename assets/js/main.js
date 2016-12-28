@@ -13,7 +13,7 @@ var ClanAOD = ClanAOD || {};
 
             this.addDynamicLinks();
             this.stickyNav();
-            this.videoModal();
+            this.handleModals();
             this.initAutoMenu();
 
         },
@@ -22,6 +22,10 @@ var ClanAOD = ClanAOD || {};
          * Add dynamic links to navigation
          */
         addDynamicLinks: function () {
+            /**
+             * Apply buttons (generic)
+             * @type {string}
+             */
             var path = AOD.path + "/public/images/",
                 homeLink = '<li class="home">' +
                     '<a href="/" class="text-link">Home</a>' +
@@ -29,6 +33,18 @@ var ClanAOD = ClanAOD || {};
                     '</li>',
                 applyLink = '<li><a data-apply-button href="#">Apply</a>';
             $('.primary-nav ul').prepend(homeLink).append(applyLink);
+
+
+            /**
+             * Handle social media links
+             */
+            $(".social-media-sites li").click(function () {
+                var link = $(this).attr('data-link');
+                if (link) {
+                    window.open(link);
+                }
+            });
+
         },
         /**
          * Allow our anchor links to scroll smoothly
@@ -71,8 +87,8 @@ var ClanAOD = ClanAOD || {};
             );
         },
 
-        videoModal: function () {
-            $(".intro-video").easyModal({
+        handleModals: function () {
+            $('.intro-video').easyModal({
                 overlayOpacity: 0.75,
                 overlayColor: "#000",
                 autoOpen: false,
@@ -92,6 +108,8 @@ var ClanAOD = ClanAOD || {};
                 $('.intro-video').trigger('openModal');
                 e.preventDefault();
             });
+
+            $('.apply-form').easyModal();
 
             $('*[data-apply-button]').click(function (e) {
                 $('.apply-form').trigger('openModal');
