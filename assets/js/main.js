@@ -137,8 +137,6 @@ var ClanAOD = ClanAOD || {};
             var target = document.getElementById(targetId);
             var headings = $('h2.automenu-heading' || headingTag);
 
-            console.log(headings);
-
             if (headings.length >= 1) {
                 // construct an ordered list of links
                 var menuList = document.createElement("UL");
