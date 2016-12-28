@@ -23,7 +23,7 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
             <div id="sub-nav"></div>
 
             <div id="general" class="game-header">
-                <img src="<?= meta('icon'); ?>" />
+                <img src="<?= meta('division_icon'); ?>" />
                 <h1><?php the_title(); ?></h1>
             </div>
 
