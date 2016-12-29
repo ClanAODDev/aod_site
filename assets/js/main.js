@@ -10,13 +10,11 @@ var ClanAOD = ClanAOD || {};
     ClanAOD = {
 
         setup: function () {
-
             this.addDynamicLinks();
             this.stickyNav();
             this.handleModals();
             this.initAutoMenu();
             this.handleApplicationLinks();
-
         },
         /**
          * Add dynamic links to navigation
@@ -33,7 +31,6 @@ var ClanAOD = ClanAOD || {};
                     '</li>',
                 applyLink = '<li><a data-apply-button href="#">Apply</a>';
             $('.primary-nav ul').prepend(homeLink).append(applyLink);
-
 
             /**
              * Handle social media links
@@ -197,4 +194,6 @@ var ClanAOD = ClanAOD || {};
 })(jQuery);
 
 ClanAOD.setup();
+
+// last to init
 ClanAOD.smoothScroll();

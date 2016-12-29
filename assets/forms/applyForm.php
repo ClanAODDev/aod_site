@@ -6,6 +6,7 @@ $divisions = DivisionRepository::allDivisions(); ?>
 
 <div class="apply-form" style="display: none;">
     <h2>Apply for a division</h2>
+    <hr />
     <div class="games-listing">
         <?php foreach ($divisions as $post): setup_postdata($post); ?>
             <a href="#" data-application-id="<?= meta('application_id') ?>"
@@ -15,7 +16,7 @@ $divisions = DivisionRepository::allDivisions(); ?>
         <?php endforeach;
         wp_reset_postdata(); ?>
     </div>
-
+    <hr />
     <p>You will be taken to our forums to complete the application process.</p>
 </div>
 
