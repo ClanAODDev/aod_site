@@ -11,9 +11,7 @@ use ClanAOD\Repositories\DivisionRepository;
 get_header();
 
 $divisions = DivisionRepository::allDivisions();
-
 $divisionCounts = (new Tracker())->getDivisionInfo();
-
 $counts = Helpers::filterDivisionCounts($divisionCounts);
 
 include(get_template_directory() . '/assets/partials/navbar.php'); ?>

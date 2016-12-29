@@ -8,7 +8,7 @@ get_header(); ?>
 
 <?php include(get_template_directory() . '/assets/partials/navbar.php'); ?>
 
-    <div id="cd-timeline" class="cd-container">
+    <div id="timeline" class="timeline-container">
         <?php if (have_posts()): while (have_posts()): the_post(); ?>
             <?php the_content(); ?>
         <?php endwhile; endif; ?>
@@ -16,7 +16,7 @@ get_header(); ?>
 
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
-            var timelineBlocks = $('.cd-timeline-block'),
+            var timelineBlocks = $('.timeline-block'),
                 offset = 0.8;
 
             //hide timeline blocks which are outside the viewport
@@ -35,13 +35,13 @@ get_header(); ?>
 
             function hideBlocks(blocks, offset) {
                 blocks.each(function () {
-                    ( $(this).offset().top > $(window).scrollTop() + $(window).height() * offset ) && $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+                    ( $(this).offset().top > $(window).scrollTop() + $(window).height() * offset ) && $(this).find('.timeline-bullet, .timeline-content').addClass('is-hidden');
                 });
             }
 
             function showBlocks(blocks, offset) {
                 blocks.each(function () {
-                    ( $(this).offset().top <= $(window).scrollTop() + $(window).height() * offset && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) && $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+                    ( $(this).offset().top <= $(window).scrollTop() + $(window).height() * offset && $(this).find('.timeline-bullet').hasClass('is-hidden') ) && $(this).find('.timeline-bullet, .timeline-content').removeClass('is-hidden').addClass('fade-in');
                 });
             }
         });

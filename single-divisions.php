@@ -9,7 +9,6 @@ use ClanAOD\Helpers;
 
 $abbrev = meta('abbreviation');
 $url = get_template_directory_uri() . '/public/images/';
-
 $divisionBg = "url('{$url}division-headers/{$abbrev}.jpg')";
 $borderBg = "url('{$url}division-bg-border.jpg')";
 
