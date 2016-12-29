@@ -9,17 +9,6 @@ var ClanAOD = ClanAOD || {};
 
     ClanAOD = {
 
-        handleApplicationLinks: function () {
-            $('*[data-application-link]').click(function () {
-                var application_id = ( $(this).data('application-id') )
-                        ? $(this).data('application-id') : $('.division').data('application-id'),
-                    application_link = "http://www.clanaod.net/forums/forms.php?do=form&fid=";
-
-                if (undefined != application_id) {
-                    window.location = application_link + application_id
-                }
-            })
-        },
         setup: function () {
 
             this.addDynamicLinks();
@@ -29,7 +18,6 @@ var ClanAOD = ClanAOD || {};
             this.handleApplicationLinks()
 
         },
-
         /**
          * Add dynamic links to navigation
          */
@@ -58,6 +46,7 @@ var ClanAOD = ClanAOD || {};
             });
 
         },
+
         /**
          * Allow our anchor links to scroll smoothly
          */
@@ -68,6 +57,23 @@ var ClanAOD = ClanAOD || {};
                 var top = $(targetId).offset().top - 90;
                 $('html, body').stop().animate({scrollTop: top}, 1500);
             });
+        },
+
+        /**
+         * Logic for clan application links
+         */
+        handleApplicationLinks: function () {
+            $('*[data-application-link]').click(function (e) {
+                e.preventDefault();
+
+                var application_id = ( $(this).data('application-id') )
+                        ? $(this).data('application-id') : $('.division').data('application-id'),
+                    application_link = "http://www.clanaod.net/forums/forms.php?do=form&fid=";
+
+                if (undefined != application_id) {
+                    window.location = application_link + application_id
+                }
+            })
         },
 
         /**
