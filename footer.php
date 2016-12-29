@@ -59,7 +59,6 @@
             <?php do_shortcode('[twitter-feed]'); ?>
         </div>
 
-        <!--
         <div class="site-meta footer-section full-width centered">
             <ul>
                 <li>Copyright &copy; 2001-2016 Angels of Death. All rights reserved.</li>
@@ -67,8 +66,6 @@
                 <li><a href="#">Sitemap</a></li>
             </ul>
         </div>
-        -->
-
     </div>
 </section>
 

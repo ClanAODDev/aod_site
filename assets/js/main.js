@@ -129,7 +129,7 @@ var ClanAOD = ClanAOD || {};
             });
 
             $('.apply-form').easyModal({
-                overlayOpacity: 0.75,
+                overlayOpacity: 0.75
             });
 
             $('*[data-apply-button]').click(function (e) {
