@@ -63,7 +63,6 @@
             <ul>
                 <li>Copyright &copy; 2001-2016 Angels of Death. All rights reserved.</li>
                 <li><a href="#">Privacy</a></li>
-                <li><a href="#">Sitemap</a></li>
             </ul>
         </div>
     </div>
