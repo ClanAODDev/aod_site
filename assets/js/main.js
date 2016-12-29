@@ -65,6 +65,7 @@ var ClanAOD = ClanAOD || {};
         handleApplicationLinks: function () {
             $('*[data-application-link]').click(function (e) {
                 e.preventDefault();
+                console.log('Application link clicked.');
 
                 var application_id = ( $(this).data('application-id') )
                         ? $(this).data('application-id') : $('.division').data('application-id'),
