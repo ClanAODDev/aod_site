@@ -17,7 +17,7 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
 
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
 
-    <section class="division"
+    <section class="division" data-application-id="<?= meta('application_id') ?>"
              style="background: <?= "{$divisionBg} no-repeat, {$borderBg} repeat-x" ?>; background-position: top center;">
         <div class="section-content-container">
             <div id="sub-nav"></div>

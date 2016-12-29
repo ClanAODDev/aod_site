@@ -9,12 +9,24 @@ var ClanAOD = ClanAOD || {};
 
     ClanAOD = {
 
+        handleApplicationLinks: function () {
+            $('*[data-application-link]').click(function () {
+                var application_id = ( $(this).data('application-id') )
+                        ? $(this).data('application-id') : $('.division').data('application-id'),
+                    application_link = "http://www.clanaod.net/forums/forms.php?do=form&fid=";
+
+                if (undefined != application_id) {
+                    window.location = application_link + application_id
+                }
+            })
+        },
         setup: function () {
 
             this.addDynamicLinks();
             this.stickyNav();
             this.handleModals();
             this.initAutoMenu();
+            this.handleApplicationLinks()
 
         },
 
@@ -109,7 +121,9 @@ var ClanAOD = ClanAOD || {};
                 e.preventDefault();
             });
 
-            $('.apply-form').easyModal();
+            $('.apply-form').easyModal({
+                overlayOpacity: 0.75,
+            });
 
             $('*[data-apply-button]').click(function (e) {
                 $('.apply-form').trigger('openModal');
