@@ -15,7 +15,7 @@ var ClanAOD = ClanAOD || {};
             this.stickyNav();
             this.handleModals();
             this.initAutoMenu();
-            this.handleApplicationLinks()
+            this.handleApplicationLinks();
 
         },
         /**
