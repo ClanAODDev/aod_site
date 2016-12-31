@@ -12,7 +12,8 @@
   width 250px
 
 .hero-video
-  height 75vh
+  min-height 700px
+  max-width 1920px
 
   .hero-text
     width 60%
@@ -45,11 +46,11 @@
   position absolute
   top 0
   left 0
-  height 75vh
-  width 100%
+  min-height 700px
+  width 100vw
   z-index 2
-  background-image url('../images/grid.png')
-  background-color rgba(0,0,0,.8)
+  background-image url('../images/grid.png'), url('../images/video-overlay.png')
+  background-color rgba(0,0,0,.5)
   background-repeat repeat, repeat-x
 
 .video-container
@@ -57,7 +58,9 @@
   object-fit cover
   padding-top 60px
   position absolute
-  height 100vh
+  height 700px
+  width 100%
+  min-width 960px
   overflow hidden
   top 0
   right 0
@@ -66,12 +69,12 @@
 
 video, .ie8-poster
   object-fit cover
-  height 75vh
+  height 700px
   z-index 1
   top 0
   left 0
   position absolute
-  width 100%
+  width 100vw
   overflow hidden
   padding-bottom 60px
 

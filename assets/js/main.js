@@ -27,7 +27,7 @@ var ClanAOD = ClanAOD || {};
             var path = AOD.path + "/public/images/",
                 homeLink = '<li class="home">' +
                     '<a href="/" class="text-link">Home</a>' +
-                    '<img src="' + path + 'logo-mini.png" onclick="window.location.replace(\'/\')"/>' +
+                    '<img src="' + path + 'aod_new.png" onclick="window.location.replace(\'/\')"/>' +
                     '</li>',
                 applyLink = '<li><a data-apply-button href="#">Apply</a>';
             $('.primary-nav ul').prepend(homeLink).append(applyLink);
