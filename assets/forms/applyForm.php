@@ -1,5 +1,7 @@
 <?php
 
+defined('ABSPATH') or die();
+
 use ClanAOD\Repositories\DivisionRepository;
 
 $divisions = DivisionRepository::allDivisions(); ?>

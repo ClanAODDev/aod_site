@@ -1,5 +1,10 @@
 <?php
 
+// handle direct access attempts
+if ( ! defined('ABSPATH')) {
+    exit;
+}
+
 use ClanAOD\Helpers;
 
 /**
@@ -21,7 +26,7 @@ class AODThemeSetup
     {
         register_nav_menus([
             'primary_nav' => 'Primary Navigation',
-            'footer_sitemap_nav' => 'Footer Sitemap Navigation'
+            'footer_sitemap_nav' => 'Footer Sitemap Navigation',
         ]);
 
         //add_filter('show_admin_bar', '__return_false');

@@ -125,6 +125,10 @@ var ClanAOD = ClanAOD || {};
                 e.preventDefault();
             });
 
+            $('.close-video').click(function () {
+                $('.intro-video').trigger('closeModal');
+            });
+
             $('.apply-form').easyModal({
                 overlayOpacity: 0.75
             });

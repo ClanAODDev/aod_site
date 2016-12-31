@@ -1,3 +1,4 @@
+<?php defined('ABSPATH') or die(); ?>
 <?php $path = get_template_directory_uri() . "/public/images/favicons-old/"; ?>
 
 <link rel="apple-touch-icon" sizes="57x57" href="<?= $path ?>apple-icon-57x57.png">
@@ -9,7 +10,7 @@
 <link rel="apple-touch-icon" sizes="144x144" href="<?= $path ?>apple-icon-144x144.png">
 <link rel="apple-touch-icon" sizes="152x152" href="<?= $path ?>apple-icon-152x152.png">
 <link rel="apple-touch-icon" sizes="180x180" href="<?= $path ?>apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="<?= $path ?>android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="192x192" href="<?= $path ?>android-icon-192x192.png">
 <link rel="icon" type="image/png" sizes="32x32" href="<?= $path ?>favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="<?= $path ?>favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="<?= $path ?>favicon-16x16.png">

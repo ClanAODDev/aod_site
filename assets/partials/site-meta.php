@@ -1,3 +1,5 @@
+<?php defined('ABSPATH') or die(); ?>
+
 <!-— facebook open graph tags -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://clanaod.net" />
