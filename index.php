@@ -1,7 +1,6 @@
 <?php
-
 /**
- * Main landing page
+ * Template Name: Landing Page Template
  */
 
 get_header();

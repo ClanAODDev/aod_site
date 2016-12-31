@@ -157,7 +157,7 @@ var ClanAOD = ClanAOD || {};
         handleAutoMenu: function (targetId, headingTag) {
 
             var target = document.getElementById(targetId);
-            var headings = $('h2.automenu-heading' || headingTag);
+            var headings = $('.automenu h2' || headingTag);
 
             if (headings.length >= 1) {
                 // construct an ordered list of links
