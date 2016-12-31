@@ -62,15 +62,17 @@ var ClanAOD = ClanAOD || {};
         handleApplicationLinks: function () {
             $('*[data-application-link]').click(function (e) {
                 e.preventDefault();
-                console.log('Application link clicked.');
 
                 var application_id = ( $(this).data('application-id') )
                         ? $(this).data('application-id') : $('.division').data('application-id'),
                     application_link = "http://www.clanaod.net/forums/forms.php?do=form&fid=";
 
-                if (undefined != application_id) {
-                    window.location = application_link + application_id
+                if (undefined == application_id) {
+                    alert('Division application id is not set!');
+                    return false;
                 }
+
+                window.open(application_link + application_id)
             })
         },
 
