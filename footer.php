@@ -6,10 +6,8 @@
             </div>
             <div class="blurb-text">
                 <h1>About The Angels of Death</h1>
-                <p>Elevatus de noster gallus, magicae cacula! All of those powerdrains will be lost in collision courses
-                    like galaxies in pressures. Vortexs peregrinatione in grandis aboa!</p>
-                <p>Demolitione placidus era est. Germanus brabeutas ducunt ad victrix. Demissio brevis quadra est.
-                    Pol.</p>
+                <p>The Angels of Death is a community of players founded in 1999 based on a core set of conduct that aims to promote decency and provide a comfortable environment to play with thousands of other likeminded members. .</p>
+                <p>With nearly 3000 members globally there is always someone to play alongside when you want.</p>
             </div>
         </div>
     </div>
