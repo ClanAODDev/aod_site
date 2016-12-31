@@ -32,7 +32,7 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
             <div class="collection">
                 <?php foreach ($divisions as $post): setup_postdata($post); ?>
                 <?php $abbreviation = meta('abbreviation'); ?>
-                    <a href="<?= $post->guid ?>" class="item game-button">
+                    <a href="<?= get_permalink(); ?>" class="item game-button">
                         <div class="icon">
                             <img class="game" src="<?= meta('division_icon'); ?>" />
                         </div>
