@@ -52,7 +52,7 @@ var ClanAOD = ClanAOD || {};
                 e.preventDefault();
                 var targetId = $(this).attr("href");
                 var top = $(targetId).offset().top - 90;
-                $('html, body').stop().animate({scrollTop: top}, 1500);
+                $('html, body').stop().animate({scrollTop: top}, 750);
             });
         },
 
@@ -65,7 +65,7 @@ var ClanAOD = ClanAOD || {};
 
                 var application_id = ( $(this).data('application-id') )
                         ? $(this).data('application-id') : $('.division').data('application-id'),
-                    application_link = "http://www.clanaod.net/forums/forms.php?do=form&fid=";
+                    application_link = "/forums/forms.php?do=form&fid=";
 
                 if (undefined == application_id) {
                     alert('Division application id is not set!');
