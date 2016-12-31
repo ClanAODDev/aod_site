@@ -21,8 +21,10 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
         <div class="section--short-width">
             <div class="section-image"></div>
             <div class="section-blurb">
-                <h1>Gaming Divisions</h1>
-                <p>Divisions are the lifeblood of the Angels of Death. As such, the leadership invests a great deal of effort and time into vetting each individual game for its worthiness for inclusion as an active division in the community.</p>
+                <?php if (have_posts()): while (have_posts()): the_post(); ?>
+                    <h1><?php the_title() ?></h1>
+                    <?php the_content(); ?>
+                <?php endwhile; endif; ?>
             </div>
         </div>
 
