@@ -7,7 +7,7 @@ use ClanAOD\Repositories\DivisionRepository;
 $divisions = DivisionRepository::allDivisions(); ?>
 
 <div class="apply-form" style="display: none;">
-    <h2>Apply for a division</h2>
+    <h2>Apply to a division</h2>
     <hr/>
     <div class="games-listing">
         <?php foreach ($divisions as $post): setup_postdata($post); ?>
@@ -20,6 +20,6 @@ $divisions = DivisionRepository::allDivisions(); ?>
         wp_reset_postdata(); ?>
     </div>
     <hr/>
-    <p>You will be taken to our forums to complete the application process.</p>
+    <p>You will be taken to our forums at ClanAOD.net to complete the application process.</p>
 </div>
 
