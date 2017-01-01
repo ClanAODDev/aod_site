@@ -11,7 +11,7 @@ $divisions = DivisionRepository::allDivisions(); ?>
     <p>You must have a forum account in order to apply for one of our divisions.</p>
     <a href="/forums/register.php" target="_blank"
        class="call-to-action-button is-small">Create an account</a>
-    <hr />
+    <hr class="margin-top-20" />
     <h2 class="margin-top-20">2. Apply to a division</h2>
     <div class="games-listing">
         <?php foreach ($divisions as $post): setup_postdata($post); ?>
