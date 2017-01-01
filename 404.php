@@ -42,5 +42,5 @@ get_header();
 <div class="wrap" style="background: url('<?= get_template_directory_uri() ?>/public/images/broke.jpg') no-repeat;">
     <h1>404</h1>
     <p>It looks like that page doesn't exist. </p>
-    <p><a href="/forums" class="call-to-action-button is-small">Go Home</a></p>
+    <p><a href="/" class="call-to-action-button is-small">Go Home</a></p>
 </div>
