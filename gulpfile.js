@@ -17,7 +17,17 @@ gulp.task('styles', function(){
             }}))
         .pipe(stylus())
         .pipe(minifycss())
-        .pipe(gulp.dest('public/css/'))
+        .pipe(gulp.dest('public/css/'));
+
+    gulp.src(['assets/stylus/editor.styl'])
+        .pipe(plumber({
+            errorHandler: function (error) {
+                console.log(error.message);
+                this.emit('end');
+            }}))
+        .pipe(stylus())
+        .pipe(minifycss())
+        .pipe(gulp.dest('public/css/'));
 });
 
 gulp.task('scripts', function(){

@@ -12,11 +12,24 @@ use ClanAOD\Helpers;
  */
 class AODThemeSetup
 {
+    /**
+     * AODThemeSetup constructor.
+     */
     public function __construct()
     {
         add_action('init', [$this, 'handleNavigation']);
 
         add_action('wp_enqueue_scripts', [$this, 'enqueue']);
+
+        add_action('admin_init', [$this, 'addEditorStyle']);
+    }
+
+    /**
+     * Import editor style for admin experience
+     */
+    public function addEditorStyle()
+    {
+        add_editor_style('editor.css');
     }
 
     /**

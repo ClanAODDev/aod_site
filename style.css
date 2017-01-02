@@ -1,13 +1,13 @@
 /**
  * Theme Name: Angels of Death
  * Description: Wordpress theme for the Angels of Death community
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Angels of Death
  * Author URI: https://clanaod.net
  *
  * GitHub Theme URI: https://github.com/flashadvocate/aod_site
  */
 
-@import "./public/css/main.css?v=0.1.2";
+@import "./public/css/main.css?v=1.0.0";
 @import "./public/fonts/fonts.css";
 
