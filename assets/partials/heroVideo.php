@@ -12,10 +12,9 @@
 
         <div class="grid"></div>
 
-        <video id="video" poster="<?= get_template_directory_uri() ?>/public/images/video-poster.jpg" autoplay loop muted>
-            <source src="<?= get_template_directory_uri() ?>/public/videos/hero-video.mp4"
-                    type="video/mp4">
-        </video>
+        <iframe id="video" frameborder="0" height="100%" width="100%"
+                src="https://www.youtube.com/embed/KN6yvG9aJsg?loop=1&autoplay=1&controls=0&showinfo=0&autohide=1">
+        </iframe>
     </div>
 </div>
 <div class="push"></div>
