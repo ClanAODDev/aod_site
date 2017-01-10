@@ -15,7 +15,7 @@
     <div class="section-content-container">
         <div class="announcements footer-section">
             <h1>Clan Announcements</h1>
-            <?php do_shortcode('[show_clan_announcements url=http://www.clanaod.net/forums/external.php?type=RSS2&forumids=102]') ?>
+            <?php do_shortcode('[show_clan_announcements url=https://www.clanaod.net/forums/external.php?type=RSS2&forumids=102]') ?>
         </div>
 
         <div class="sitemap footer-section qtr-width">
