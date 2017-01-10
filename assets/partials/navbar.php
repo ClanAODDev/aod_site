@@ -9,7 +9,7 @@
         ?>
     </div>
     <div class="mobile-nav">
-        <img class="clan-logo"
+        <img class="clan-logo" href="/"
              src="<?= get_template_directory_uri() ?>/public/images/aod_new.png"/>
         <div class="hamburger"><i class="fa fa-bars fa-2x"></i></div>
         <div class="nav-items">
