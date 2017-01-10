@@ -25,12 +25,19 @@ var ClanAOD = ClanAOD || {};
              * @type {string}
              */
             var path = AOD.path + "/public/images/",
-                homeLink = '<li class="home">' +
+
+                homeLinkWithLogo = '<li class="home">' +
                     '<a href="/" class="text-link">Home</a>' +
-                    '<img src="' + path + 'aod_new.png" onclick="window.location.replace(\'/\')"/>' +
+                    '<img class="clan-logo" src="' + path +
+                    'aod_new.png" onclick="window.location.replace(\'/\')"/>' +
                     '</li>',
+
+                homeLink = '<li class="home"><a href="/" class="text-link">Home</a></li>',
+
                 applyLink = '<li><a data-apply-button href="#">Apply</a>';
-            $('.primary-nav ul').prepend(homeLink).append(applyLink);
+
+            $('.full-nav ul').prepend(homeLinkWithLogo).append(applyLink);
+            $('.mobile-nav ul').prepend(homeLink).append(applyLink);
 
             /**
              * Handle social media links
@@ -42,6 +49,9 @@ var ClanAOD = ClanAOD || {};
                 }
             });
 
+            $(".hamburger").click(function () {
+               $(".nav-items").fadeToggle();
+            });
         },
 
         /**
@@ -93,13 +103,13 @@ var ClanAOD = ClanAOD || {};
 
             $(window).bind('scroll', function () {
                     if ($('.stay-fixed').length > 0) {
-                        $('.stay-fixed').find('.home').addClass('show-logo');
+                        $('.stay-fixed').find('.full-nav .home').addClass('show-logo');
                     } else if ($(window).scrollTop() > scrollLocation) {
                         $('.primary-nav').addClass('fixed')
-                            .find('.home').addClass('show-logo');
+                            .find('.full-nav .home').addClass('show-logo');
                     } else {
                         $('.primary-nav').removeClass('fixed')
-                            .find('.home').removeClass('show-logo')
+                            .find('.full-nav .home').removeClass('show-logo')
                     }
                 }
             );

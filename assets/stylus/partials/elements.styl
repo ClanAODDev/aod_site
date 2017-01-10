@@ -106,6 +106,26 @@ a.call-to-action-button
 
 /** nav bar **/
 
+.clan-logo
+  filter drop-shadow(0 0 5px #000)
+  -webkit-filter drop-shadow(0 0 5px #000)
+  cursor pointer
+
+.mobile-nav .nav-items, .mobile-nav .clan-logo, .mobile-nav .hamburger
+  display none
+
+.mobile-nav .clan-logo
+    padding 10px 0 0 20px
+
+.mobile-nav .hamburger
+  position fixed
+  top 20px
+  right 20px
+  cursor pointer
+  color #888
+  &:hover
+    color #999
+
 .primary-nav
   z-index 50
   width 100%
@@ -118,7 +138,7 @@ a.call-to-action-button
   .nav-texture
     background url('../images/navbar-texture.png') no-repeat center 0
 
-  ul
+  .full-nav ul
     text-align center
     margin 0 auto
     padding 0
@@ -135,11 +155,8 @@ a.call-to-action-button
       img
         display block
         opacity 0
-        cursor pointer
         margin-top -70px
         margin-right 20px
-        filter drop-shadow(0 0 5px #000)
-        -webkit-filter drop-shadow(0 0 5px #000)
 
       &:first-of-type
         background none
