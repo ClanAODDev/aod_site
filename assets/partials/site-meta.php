@@ -1,5 +1,7 @@
 <?php defined('ABSPATH') or die(); ?>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <!-— facebook open graph tags -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://clanaod.net" />
