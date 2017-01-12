@@ -1,7 +1,7 @@
 <?php defined('ABSPATH') or die(); ?>
 
-<div class="hero-video">
-    <div class="video-container">
+<div class="hero-video video-background">
+    <div class="video-container video-foreground">
 
         <div class="hero-text">
             <img src="<?= get_template_directory_uri() ?>/public/images/official-logo.png" class="aod-logo"/>
@@ -12,9 +12,9 @@
 
         <div class="grid"></div>
 
-        <iframe id="video" frameborder="0" height="100%" width="100%"
+        <iframe id="video" frameborder="0" width="100%"
                 src="https://www.youtube.com/embed/KN6yvG9aJsg?loop=1&autoplay=1&controls=0&showinfo=0&autohide=1&playlist=KN6yvG9aJsg">
         </iframe>
     </div>
 </div>
-<div class="push"></div>
+<div class="push" style="margin-top: 700px;"></div>
