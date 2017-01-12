@@ -6,5 +6,5 @@
         <i class="fa fa-times-circle fa-lg"></i>
     </div>
     <iframe src="https://www.youtube.com/embed/ZCpfySvao9s?autoplay=0&amp;showinfo=0&amp;enablejsapi=1"
-            id="video-iframe" frameborder="0" width="960px" height="650px" allowfullscreen></iframe>
+            id="video-iframe" frameborder="0" allowfullscreen></iframe>
 </div>
