@@ -59,7 +59,7 @@
 
         <div class="site-meta footer-section full-width centered">
             <ul>
-                <li>Copyright &copy; 2001-2016 Angels of Death. All rights reserved.</li>
+                <li>Copyright &copy; <?php echo "2001 - " . date(Y) ?> Angels of Death. All rights reserved.</li>
                 <li><a href="#">Privacy</a></li>
             </ul>
         </div>
