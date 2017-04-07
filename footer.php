@@ -2,7 +2,7 @@
     <div class="section-content-container">
         <div class="section-blurb">
             <div class="logo">
-                <img src="<?= get_template_directory_uri() ?>/public/images/official-logo.png"/>
+                <img src="<?= get_template_directory_uri() ?>/public/images/official-logo.png" />
             </div>
             <div class="blurb-text">
                 <h1>About The Angels of Death</h1>
@@ -59,7 +59,7 @@
 
         <div class="site-meta footer-section full-width centered">
             <ul>
-                <li>Copyright &copy; <?php echo "2001 - " . date(Y) ?> Angels of Death. All rights reserved.</li>
+                <li>Copyright &copy; <?php echo "2001 - " . date('Y'); ?> Angels of Death. All rights reserved.</li>
                 <li><a href="#">Privacy</a></li>
             </ul>
         </div>
