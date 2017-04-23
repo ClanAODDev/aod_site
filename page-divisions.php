@@ -4,13 +4,13 @@
  * Template Name: Divisions Template
  */
 
+use ClanAOD\ExtensionsPlugin;
 use ClanAOD\Helpers;
 use ClanAOD\Tracker;
-use ClanAOD\Repositories\DivisionRepository;
 
 get_header();
 
-$divisions = DivisionRepository::allDivisions();
+$divisions = ExtensionsPlugin::allDivisions();
 $divisionCounts = (new Tracker())->getDivisionInfo();
 $counts = Helpers::filterDivisionCounts($divisionCounts);
 

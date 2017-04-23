@@ -2,9 +2,7 @@
 
 defined('ABSPATH') or die();
 
-use ClanAOD\Repositories\DivisionRepository;
-
-$divisions = DivisionRepository::allDivisions(); ?>
+$divisions = \ClanAOD\ExtensionsPlugin::allDivisions(); ?>
 
 <div class="apply-form" style="display: none;">
     <h2>1. Create a forum account</h2>
