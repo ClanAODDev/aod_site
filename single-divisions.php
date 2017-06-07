@@ -19,7 +19,7 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
 
             <div id="general" class="game-header">
                 <img class="game" src="<?= meta('division_icon'); ?>"/>
-                <h1><?php the_title(); ?></h1>
+                <h1><?php the_title(); ?> Division</h1>
             </div>
 
             <!--            <div class="command-staff sub-section">-->
