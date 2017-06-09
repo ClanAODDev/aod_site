@@ -22,6 +22,9 @@ class AODThemeSetup
         add_action('wp_enqueue_scripts', [$this, 'enqueue']);
 
         add_action('admin_init', [$this, 'addEditorStyle']);
+
+        add_theme_support( 'post-thumbnails' );
+
     }
 
     /**

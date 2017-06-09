@@ -12,7 +12,7 @@ $borderBg = "url('{$url}division-bg-border.jpg')";
 include(get_template_directory() . '/assets/partials/navbar.php'); ?>
 
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
-    <?php $background = (meta('header_image')) ?: $defaultHeader; ?>
+    <?php $background = has_post_thumbnail() ? get_the_post_thumbnail_url() : $defaultHeader; ?>
 
     <section class="page"
              style="background: <?= "url({$background}) no-repeat, {$borderBg} repeat-x" ?>; background-position: top center;">
@@ -25,3 +25,4 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
 
 <?php endwhile; endif;
 get_footer(); ?>
+
