@@ -16,9 +16,16 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
 
     <section class="page"
              style="background: <?= "url({$background}) no-repeat, {$borderBg} repeat-x" ?>; background-position: top center;">
-        <div class="section-content-container automenu">
+        <div class="section-content-container">
             <div id="sub-nav"></div>
-            <h1><?php the_title(); ?></h1>
+            <h1 class="post-title"><?php the_title(); ?></h1>
+            <h3 class="category-title">
+                <?php foreach (get_the_category() as $category) {
+                    echo $category->name . " ";
+                } ?>
+            </h3>
+
+            <p class="date-posted"><?php the_date(); ?></p>
             <?php the_content(); ?>
         </div>
     </section>
