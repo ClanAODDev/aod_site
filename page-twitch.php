@@ -17,7 +17,7 @@ $borderBg = "url('{$url}division-bg-border.jpg')";
 include(get_template_directory() . '/assets/partials/navbar.php'); ?>
 
 <section class="page">
-    <div class="section-content-container">
+    <div class="section-content-container" style="width: 100% !important">
         <div class="section">
             <div id="twitch-embed"></div>
         </div>
