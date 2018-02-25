@@ -32,9 +32,8 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
   new Twitch.Embed('twitch-embed', {
     width: '100%',
     height: '500',
-    channel: 'monstercat',
+    channel: 'clanaodstream',
     theme: 'dark',
-    layout: 'video'
   });
 </script>
 
