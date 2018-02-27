@@ -23,7 +23,7 @@ class AODThemeSetup
 
         add_action('admin_init', [$this, 'addEditorStyle']);
 
-        add_theme_support( 'post-thumbnails' );
+        add_theme_support('post-thumbnails');
 
     }
 
@@ -44,16 +44,6 @@ class AODThemeSetup
             'primary_nav' => 'Primary Navigation',
             'footer_sitemap_nav' => 'Footer Sitemap Navigation',
         ]);
-
-        //add_filter('show_admin_bar', '__return_false');
-    }
-
-    /**
-     * Provide theme awareness to front-end scripts
-     */
-    private function localizationForScripts()
-    {
-        wp_localize_script('aod-main', 'AOD', ['path' => get_template_directory_uri()]);
     }
 
     /**
@@ -76,6 +66,14 @@ class AODThemeSetup
         wp_enqueue_script('easy-modal');
         wp_enqueue_script('aod-main');
 
+    }
+
+    /**
+     * Provide theme awareness to front-end scripts
+     */
+    private function localizationForScripts()
+    {
+        wp_localize_script('aod-main', 'AOD', ['path' => get_template_directory_uri()]);
     }
 }
 
