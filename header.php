@@ -9,8 +9,12 @@
 
     <?php include(get_template_directory() . '/assets/partials/favicons.php'); ?>
     <?php include(get_template_directory() . '/assets/partials/site-meta.php'); ?>
+    <?php
+    $channel = (new ClanAOD\Twitch('clanaodstream'))->getChannel();
+    $status = is_null($channel->stream) ? "offline" : 'online';
+    ?>
 
     <?php wp_head(); ?>
 </head>
-<body>
+<body data-twitch-status="<?= $status ?>">
 <?php include(get_template_directory() . '/assets/forms/applyForm.php'); ?>
