@@ -25,6 +25,18 @@ class AODThemeSetup
 
         add_theme_support('post-thumbnails');
 
+        add_filter('body_class', [$this, 'add_slug_body_class']);
+
+    }
+
+    public function add_slug_body_class($classes)
+    {
+        global $post;
+        if (isset($post)) {
+            $classes[] = $post->post_type . '-' . $post->post_name;
+        }
+
+        return $classes;
     }
 
     /**
