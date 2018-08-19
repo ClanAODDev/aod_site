@@ -14,7 +14,7 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
 
 <section class="page">
     <div class="sectioncontentcontainer" style="width: 100% !important">
-        <div class="section">
+        <div class="section" style="height: 100vh;">
             <div id="twitchembed"></div>
         </div>
 
@@ -237,7 +237,7 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
 <script type="text/javascript">
   new Twitch.Embed('twitchembed', {
     width: '100%',
-    height: '500',
+    height: '100%',
     channel: 'clanaodstream',
     theme: 'dark',
   });
