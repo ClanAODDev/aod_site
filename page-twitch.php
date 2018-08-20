@@ -13,9 +13,9 @@ $borderBg = "url('{$url}divisionbgborder.jpg')";
 include(get_template_directory() . '/assets/partials/navbar.php'); ?>
 
 <section class="page">
-    <div class="sectioncontentcontainer" style="width: 100% !important">
+    <div class="sectioncontentcontainer" style="width: 100% !important; margin-top: -30px;">
 
-        <div id="twitchembed" style="height: 100vh;"></div>
+        <div id="twitchembed" style="height: 75vh;"></div>
 
         <div class="section-title" style="text-align: center;">
             <h1>Stream Schedule</h1>

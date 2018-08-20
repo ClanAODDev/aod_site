@@ -16,5 +16,5 @@
 
     <?php wp_head(); ?>
 </head>
-<body data-twitch-status="<?= $status ?>">
+<body data-twitch-status="<?= $status ?>" <?php body_class() ?>>
 <?php include(get_template_directory() . '/assets/forms/applyForm.php'); ?>
