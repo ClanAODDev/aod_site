@@ -13,7 +13,7 @@
         <div class="grid"></div>
 
         <iframe id="video" frameborder="0" width="100%"
-                src="https://www.youtube.com/embed/KN6yvG9aJsg?loop=1&autoplay=1&controls=0&showinfo=0&autohide=1&playlist=KN6yvG9aJsg">
+                src="https://www.youtube.com/embed/KN6yvG9aJsg?loop=1&autoplay=1&controls=0&showinfo=0&autohide=1&playlist=KN6yvG9aJsg&mute=1">
         </iframe>
     </div>
 </div>
