@@ -1,2 +1,2 @@
 # AOD Site
-Wordpress implementation of the Angels of Death website
+Wordpress implementation of the Angels of Death website. Test
