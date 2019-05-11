@@ -21,4 +21,5 @@
             ?>
         </div>
     </div>
+<?php //do_shortcode('[commo]'); ?>
 </div>
