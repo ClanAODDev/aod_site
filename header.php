@@ -17,4 +17,5 @@
     <?php wp_head(); ?>
 </head>
 <body data-twitch-status="<?= $status ?>" <?php body_class() ?>>
+<?php do_shortcode('[commo]'); ?>
 <?php include(get_template_directory() . '/assets/forms/applyForm.php'); ?>

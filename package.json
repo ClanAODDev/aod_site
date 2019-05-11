@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/flashadvocate/aod_site/issues"
   },
-  "homepage": "https://github.com/flashadvocate/aod_site"
+  "homepage": "https://github.com/flashadvocate/aod_site",
+  "resolutions": {
+    "natives": "1.1.3"
+  }
 }
