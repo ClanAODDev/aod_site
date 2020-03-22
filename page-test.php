@@ -1,3 +1,10 @@
+<?php
+/**
+ * Template Name: Testing
+ */
+
+?>
+
 <html lang="en" style=""
       class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
 <head>
@@ -67,140 +74,6 @@
 
     <link rel="dns-prefetch" href="//www.clanaod.net">
     <link rel="dns-prefetch" href="//s.w.org">
-    <script type="text/javascript">
-        window._wpemojiSettings = {
-            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/",
-            "ext": ".png",
-            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/",
-            "svgExt": ".svg",
-            "source": {"concatemoji": "https:\/\/www.clanaod.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.7"}
-        };
-        !function (a, b, c) {
-            function d(a, b) {
-                var c = String.fromCharCode;
-                l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, a), 0, 0);
-                var d = k.toDataURL();
-                l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, b), 0, 0);
-                var e = k.toDataURL();
-                return d === e
-            }
-
-            function e(a) {
-                var b;
-                if (!l || !l.fillText) return !1;
-                switch (l.textBaseline = "top", l.font = "600 32px Arial", a) {
-                    case"flag":
-                        return !(b = d([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819])) && (b = d([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]), !b);
-                    case"emoji":
-                        return b = d([55357, 56692, 8205, 9792, 65039], [55357, 56692, 8203, 9792, 65039]), !b
-                }
-                return !1
-            }
-
-            function f(a) {
-                var c = b.createElement("script");
-                c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
-            }
-
-            var g, h, i, j, k = b.createElement("canvas"), l = k.getContext && k.getContext("2d");
-            for (j = Array("flag", "emoji"), c.supports = {
-                everything: !0,
-                everythingExceptFlag: !0
-            }, i = 0; i < j.length; i++) c.supports[j[i]] = e(j[i]), c.supports.everything = c.supports.everything && c.supports[j[i]], "flag" !== j[i] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[j[i]]);
-            c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () {
-                c.DOMReady = !0
-            }, c.supports.everything || (h = function () {
-                c.readyCallback()
-            }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", h, !1), a.addEventListener("load", h, !1)) : (a.attachEvent("onload", h), b.attachEvent("onreadystatechange", function () {
-                "complete" === b.readyState && c.readyCallback()
-            })), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g.wpemoji)))
-        }(window, document, window._wpemojiSettings);
-    </script>
-    <style type="text/css">
-        .tv {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-        .tv .screen {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 1;
-            margin: auto;
-            opacity: 0;
-            transition: opacity .5s;
-        }
-        .tv .screen.active {
-            opacity: 1;
-        }
-
-    </style>
-
-    <script>
-        var tag = document.createElement('script');
-        tag.src = 'https://www.youtube.com/player_api';
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        var tv,
-            playerDefaults = {autoplay: 0, autohide: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 0, iv_load_policy: 3};
-        var vid = [
-                {'videoId': 'mrKdx7mDsPw','suggestedQuality': 'hd720'},
-            ],
-            randomVid = Math.floor(Math.random() * vid.length),
-            currVid = randomVid;
-
-        function onYouTubePlayerAPIReady(){
-            tv = new YT.Player('tv', {events: {'onReady': onPlayerReady, 'onStateChange': onPlayerStateChange}, playerVars: playerDefaults});
-        }
-
-        function onPlayerReady(){
-            tv.loadVideoById(vid[currVid]);
-            tv.mute();
-        }
-
-        function onPlayerStateChange(e) {
-            if (e.data === 1){
-                $('#tv').addClass('active');
-                $('.hi em:nth-of-type(2)').html(currVid + 1);
-            } else if (e.data === 2){
-                $('#tv').removeClass('active');
-                if(currVid === vid.length - 1){
-                    currVid = 0;
-                } else {
-                    currVid++;
-                }
-                tv.loadVideoById(vid[currVid]);
-            }
-        }
-
-        function vidRescale(){
-
-            var w = $(window).width()+200,
-                h = $(window).height()+200;
-
-            if (w/h > 16/9){
-                tv.setSize(w, w/16*9);
-                $('.tv .screen').css({'left': '0px'});
-            } else {
-                tv.setSize(h/9*16, h);
-                $('.tv .screen').css({'left': -($('.tv .screen').outerWidth()-w)/2});
-            }
-        }
-
-        $(window).on('load resize', function(){
-            vidRescale();
-        });
-
-    </script>
-
-
 
     <script type="text/javascript" src="https://www.clanaod.net/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
     <script type="text/javascript"
@@ -630,6 +503,138 @@ Congratulations to the AOD Racing Division on their phenomenal accomplishment th
      style="display: none; position: fixed; z-index: 0; top: 0px; left: 0px; height: 100%; width: 100%; background: rgb(0, 0, 0); opacity: 0.75; overflow: auto;"></div>
 <script type="text/javascript" src="https://www.clanaod.net/wp-includes/js/wp-embed.min.js?ver=4.9.7"></script>
 
+<script type="text/javascript">
+    window._wpemojiSettings = {
+        "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/",
+        "ext": ".png",
+        "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/",
+        "svgExt": ".svg",
+        "source": {"concatemoji": "https:\/\/www.clanaod.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.7"}
+    };
+    !function (a, b, c) {
+        function d(a, b) {
+            var c = String.fromCharCode;
+            l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, a), 0, 0);
+            var d = k.toDataURL();
+            l.clearRect(0, 0, k.width, k.height), l.fillText(c.apply(this, b), 0, 0);
+            var e = k.toDataURL();
+            return d === e
+        }
+
+        function e(a) {
+            var b;
+            if (!l || !l.fillText) return !1;
+            switch (l.textBaseline = "top", l.font = "600 32px Arial", a) {
+                case"flag":
+                    return !(b = d([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819])) && (b = d([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]), !b);
+                case"emoji":
+                    return b = d([55357, 56692, 8205, 9792, 65039], [55357, 56692, 8203, 9792, 65039]), !b
+            }
+            return !1
+        }
+
+        function f(a) {
+            var c = b.createElement("script");
+            c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c)
+        }
+
+        var g, h, i, j, k = b.createElement("canvas"), l = k.getContext && k.getContext("2d");
+        for (j = Array("flag", "emoji"), c.supports = {
+            everything: !0,
+            everythingExceptFlag: !0
+        }, i = 0; i < j.length; i++) c.supports[j[i]] = e(j[i]), c.supports.everything = c.supports.everything && c.supports[j[i]], "flag" !== j[i] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[j[i]]);
+        c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () {
+            c.DOMReady = !0
+        }, c.supports.everything || (h = function () {
+            c.readyCallback()
+        }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", h, !1), a.addEventListener("load", h, !1)) : (a.attachEvent("onload", h), b.attachEvent("onreadystatechange", function () {
+            "complete" === b.readyState && c.readyCallback()
+        })), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g.wpemoji)))
+    }(window, document, window._wpemojiSettings);
+</script>
+<style type="text/css">
+    .tv {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .tv .screen {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        margin: auto;
+        opacity: 0;
+        transition: opacity .5s;
+    }
+    .tv .screen.active {
+        opacity: 1;
+    }
+
+</style>
+
+<script>
+    var tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/player_api';
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    var tv,
+        playerDefaults = {autoplay: 0, autohide: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 0, iv_load_policy: 3};
+    var vid = [
+            {'videoId': 'mrKdx7mDsPw','suggestedQuality': 'hd720'},
+        ],
+        randomVid = Math.floor(Math.random() * vid.length),
+        currVid = randomVid;
+
+    function onYouTubePlayerAPIReady(){
+        tv = new YT.Player('tv', {events: {'onReady': onPlayerReady, 'onStateChange': onPlayerStateChange}, playerVars: playerDefaults});
+    }
+
+    function onPlayerReady(){
+        tv.loadVideoById(vid[currVid]);
+        tv.mute();
+    }
+
+    function onPlayerStateChange(e) {
+        if (e.data === 1){
+            $('#tv').addClass('active');
+            $('.hi em:nth-of-type(2)').html(currVid + 1);
+        } else if (e.data === 2){
+            $('#tv').removeClass('active');
+            if(currVid === vid.length - 1){
+                currVid = 0;
+            } else {
+                currVid++;
+            }
+            tv.loadVideoById(vid[currVid]);
+        }
+    }
+
+    function vidRescale(){
+
+        var w = $(window).width()+200,
+            h = $(window).height()+200;
+
+        if (w/h > 16/9){
+            tv.setSize(w, w/16*9);
+            $('.tv .screen').css({'left': '0px'});
+        } else {
+            tv.setSize(h/9*16, h);
+            $('.tv .screen').css({'left': -($('.tv .screen').outerWidth()-w)/2});
+        }
+    }
+
+    $(window).on('load resize', function(){
+        vidRescale();
+    });
+
+</script>
 
 </body>
 </html>
