@@ -4,7 +4,7 @@
     <div class="video-container video-foreground">
 
         <div class="hero-text">
-            <img src="<?= get_template_directory_uri() ?>/public/images/official-logo.png" class="aod-logo"/>
+            <img src="<?= get_template_directory_uri() ?>/public/images/logo-xmas.png" class="aod-logo"/>
             <h1>Game with purpose<br/>inspired by community</h1>
             <h2 class="subtitle">What are you waiting for?</h2>
             <div class="play-button">PLAY VIDEO</div>
