@@ -16,6 +16,11 @@ $counts = Helpers::filterDivisionCounts($divisionCounts);
 
 include(get_template_directory() . '/assets/partials/navbar.php'); ?>
 
+<meta property="og:url" content="<?= get_permalink(); ?>"/>
+<meta property="og:title" content="<?php the_title() ?>"/>
+<meta property="og:description" content="<?php the_excerpt() ?>"/>
+<meta property="og:site_name" content="Clan AOD"/>
+
 <section class="lobby">
     <div class="section-content-container">
         <div class="section--short-width">
