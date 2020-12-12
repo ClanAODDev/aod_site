@@ -14,16 +14,7 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
 
 <section class="page">
     <div class="sectioncontentcontainer" style="width: 100% !important; margin-top: -30px;">
-
         <div id="twitchembed" style="height: 75vh;"></div>
-
-        <div class="section-title" style="text-align: center;">
-            <h1>Stream Schedule</h1>
-        </div>
-
-        <div class="section table100 ver1" style="display: flex;">
-            <?php include_once('assets/partials/twitch_schedule.html'); ?>
-        </div>
     </div>
 </section>
 
