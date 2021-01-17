@@ -3,6 +3,7 @@
 defined('ABSPATH') or die();
 
 use ClanAOD\ExtensionsPlugin;
+use ClanAOD\Helpers;
 use ClanAOD\Tracker;
 
 $divisions = ExtensionsPlugin::allDivisions();
