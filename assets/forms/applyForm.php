@@ -2,7 +2,10 @@
 
 defined('ABSPATH') or die();
 
-$divisions = \ClanAOD\ExtensionsPlugin::allDivisions();
+use ClanAOD\ExtensionsPlugin;
+use ClanAOD\Tracker;
+
+$divisions = ExtensionsPlugin::allDivisions();
 $divisionCounts = (new Tracker())->getDivisionInfo();
 $counts = Helpers::filterDivisionCounts($divisionCounts);
 
