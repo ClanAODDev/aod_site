@@ -2,7 +2,11 @@
 
 defined('ABSPATH') or die();
 
-$divisions = \ClanAOD\ExtensionsPlugin::allDivisions(); ?>
+$divisions = \ClanAOD\ExtensionsPlugin::allDivisions();
+$divisionCounts = (new Tracker())->getDivisionInfo();
+$counts = Helpers::filterDivisionCounts($divisionCounts);
+
+?>
 
 <div class="apply-form" style="display: none;">
     <h2>1. Create a forum account</h2>
@@ -13,7 +17,8 @@ $divisions = \ClanAOD\ExtensionsPlugin::allDivisions(); ?>
     <h2 class="margin-top-20">2. Apply to a division</h2>
     <div class="games-listing">
         <?php foreach ($divisions as $post): setup_postdata($post); ?>
-            <?php if ($post): ?>
+            <?php $abbreviation = meta('abbreviation'); ?>
+            <?php if (isset($counts[$abbreviation])): ?>
                 <a href="#" data-application-id="<?= meta('application_id') ?>"
                    data-application-link class="tooltips">
                     <img class="game" src="<?= meta('division_icon'); ?>"/>
