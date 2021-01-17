@@ -18,32 +18,6 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
     </div>
 </section>
 
-<style>
-    .ver1 {
-        cursor: default
-    }
-
-    td, th {
-        padding: 10px
-    }
-
-    .table100.ver1 th {
-        text-transform: uppercase
-    }
-
-    .table100.ver1 .hov-column-ver1, .table100.ver1 .row100:hover {
-        background-color: rgba(255, 255, 255, .1)
-    }
-
-    .table100.ver1 .hov-column-head-ver1 {
-        background-color: #484848 !important
-    }
-
-    .table100.ver1 .row100 td:hover {
-        background-color: rgba(255, 255, 255, .1);
-        color: #fff
-    }
-</style>
 
 <! Load the Twitch embed script >
 <script src="https://embed.twitch.tv/embed/v1.js"></script>

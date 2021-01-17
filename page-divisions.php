@@ -31,17 +31,20 @@ include(get_template_directory() . '/assets/partials/navbar.php'); ?>
         <div class="divisions-list">
             <div class="collection">
                 <?php foreach ($divisions as $post): setup_postdata($post); ?>
-                <?php $abbreviation = meta('abbreviation'); ?>
-                    <a href="<?= get_permalink(); ?>" class="item game-button">
-                        <div class="icon">
-                            <img class="game" src="<?= meta('division_icon'); ?>" />
-                        </div>
-                        <div class="meta">
-                            <div class="title"><?= $post->post_title; ?></div>
-                            <div class="members"><?= $counts[$abbreviation] ?> Members</div>
-                        </div>
-                    </a>
-                <?php endforeach; wp_reset_postdata(); ?>
+                    <?php $abbreviation = meta('abbreviation'); ?>
+                    <?php if (isset($counts[$abbreviation])): ?>
+                        <a href="<?= get_permalink(); ?>" class="item game-button">
+                            <div class="icon">
+                                <img class="game" src="<?= meta('division_icon'); ?>"/>
+                            </div>
+                            <div class="meta">
+                                <div class="title"><?= $post->post_title; ?></div>
+                                <div class="members"><?= $counts[$abbreviation] ?> Members</div>
+                            </div>
+                        </a>
+                    <?php endif; ?>
+                <?php endforeach;
+                wp_reset_postdata(); ?>
             </div>
         </div>
     </div>
