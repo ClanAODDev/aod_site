@@ -60,7 +60,7 @@
         <div class="site-meta footer-section full-width centered">
             <ul>
                 <li>Copyright &copy; <?php echo "2001 - " . date('Y'); ?> Angels of Death. All rights reserved.</li>
-                <li><a href="#">Privacy</a></li>
+                <li><a href="https://www.clanaod.net/privacy-policy/">Privacy</a></li>
             </ul>
         </div>
     </div>
